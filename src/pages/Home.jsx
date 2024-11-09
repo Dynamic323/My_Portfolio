@@ -156,7 +156,6 @@ function Home() {
                       .replace(/\s+/g, "-")
                       .replace(/\./g, "-")}`}
                   >
-                    {console.log(tech.Name.toLowerCase().replace(/\s+/g, "-"))}
                     {tech.icon} {tech.Name}
                   </motion.li>
                 ))}

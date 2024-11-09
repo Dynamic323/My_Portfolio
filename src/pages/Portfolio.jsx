@@ -50,7 +50,6 @@ function Portfolio() {
       alt: "metaspark",
     },
   ];
-  console.log(current); // Check if the projects data is being passed correctly
 
   return (
     <>
