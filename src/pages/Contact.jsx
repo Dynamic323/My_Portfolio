@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import Pagebg from "../components/pagebg";
+import Pagebg from "../components/Pagebg";
 
 function Contact() {
   const [formData, setFormData] = useState({
