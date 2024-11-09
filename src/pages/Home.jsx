@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import Navbar from "../components/Navbar";
-import Pagebg from "../components/pagebg";
+import Pagebg from "../components/Pagebg";
 import { images, icons } from "../assets";
 
 function Home() {
