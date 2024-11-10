@@ -2,7 +2,7 @@ import profile from "../../public/images/avarta_profile.png";
 
 import mexanto from "../../public/images/mexant.png";
 import movieweb from "../../public/images/movie_web.png";
-import net_downloader from "../../public/images/net_downloader.png";
+import net_downloader from "../../public/images/netdownloader.png";
 import movie_screenshot1 from "../../public/images/movie_web-1.png";
 import movie_screenshot2 from "../../public/images/movie_web-2.png";
 import movie_screenshot3 from "../../public/images/movie_web-3.png";
