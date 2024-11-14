@@ -19,8 +19,31 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here, you can add form submission logic
-    console.log("Form submitted", formData);
+
+    // Basic email validation using regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(formData.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    // Check for empty strings after trimming
+    if (
+      !formData.fullname.trim() ||
+      !formData.email.trim() ||
+      !formData.message.trim()
+    ) {
+      alert("All fields must be filled out properly.");
+      return;
+    }
+
+    // Redirect to WhatsApp with form details
+    window.location.href = `https://wa.me/2349161712483?text=Name:${encodeURIComponent(
+      formData.fullname
+    )}%0AEmail:${encodeURIComponent(
+      formData.email
+    )}%0AMessage:${encodeURIComponent(formData.message)}`;
   };
   return (
     <>

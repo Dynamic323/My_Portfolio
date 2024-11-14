@@ -39,10 +39,14 @@ function Layout({ children }) {
             <h1 className="name" title="Richard Hanrick">
               Dy coderx
             </h1>
-            <p className="title">Software  developer</p>
+            <button className="title">Download Cv</button>
           </div>
 
-          <button className="info_more-btn" data-sidebar-btn ref={sidebarBtnRef}>
+          <button
+            className="info_more-btn"
+            data-sidebar-btn
+            ref={sidebarBtnRef}
+          >
             <span>Show Contacts</span>
             <i className="fas fa-chevron-down"></i>
           </button>
@@ -104,23 +108,29 @@ function Layout({ children }) {
 
         <ul className="social-list">
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a
+              href="https://web.facebook.com/tina.otamere.9"
+              className="social-link"
+            >
               <i className="fab fa-facebook-f"></i>
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a href="https://x.com/IsraelOtam69481" className="social-link">
               <i className="fab fa-twitter"></i>
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a
+              href="https://www.instagram.com/tina.otamere.9/"
+              className="social-link"
+            >
               <i className="fab fa-instagram"></i>
             </a>
           </li>
           <li className="social-item">
-            <a href="#" className="social-link">
-              <i className="fab fa-linkedin-in"></i>
+            <a href="https://github.com/Dynamic323/" className="social-link">
+              <i className="fab fa-github"></i>
             </a>
           </li>
         </ul>

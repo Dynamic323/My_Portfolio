@@ -2,60 +2,32 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Pagebg from "../components/Pagebg";
 import { images } from "../assets";
-
+import Modal from "../components/Modal";
+import projects from "../Project_data";
 function Portfolio() {
   const [current, setCurrent] = useState("All");
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownVisible(!isDropdownVisible);
+  };
 
   const handleCurrent = (category) => {
     setCurrent(category);
   };
 
-  const portfolio = ["All", "Web design", "Applications", "Web development"];
-
-  const projects = [
-    {
-      title: "Mexanto",
-      category: "Web development",
-      imgSrc: images.mexanto,
-      alt: "mexanto",
-    },
-    {
-      title: "Movieo",
-      category: "Web development",
-      imgSrc: images.movieweb,
-      alt: "movieo",
-    },
-    {
-      title: "Fundo",
-      category: "Web design",
-      imgSrc: images.net_downloader,
-      alt: "fundo",
-    },
-    {
-      title: "Brawlhalla",
-      category: "Applications",
-      imgSrc: images.movie_screenshot3,
-      alt: "brawlhalla",
-    },
-    {
-      title: "DSM.",
-      category: "Web design",
-      imgSrc: "./assets/images/project-5.png",
-      alt: "dsm",
-    },
-    {
-      title: "MetaSpark",
-      category: "Web design",
-      imgSrc: "./assets/images/project-6.png",
-      alt: "metaspark",
-    },
-  ];
+  const handelModal = (item) => {
+    setSelectedProject(item);
+  };
+  const portfolio = ["All", "Frontend", "Fullstack", "Mobile", "Backend"];
 
   return (
     <>
       <Navbar />
       <Pagebg title="Portfolio">
         <section className="projects">
+          {/* Select Box and Projects Filter */}
           <ul className="filter-list">
             {portfolio.map((item) => (
               <li className="filter-item" key={item}>
@@ -71,8 +43,8 @@ function Portfolio() {
 
           <div className="filter-select-box">
             <button
-              className="filter-select"
-              onClick={() => handleCurrent("All")}
+              className={`filter-select ${isDropdownVisible ? "active" : ""}`}
+              onClick={toggleDropdown}
             >
               <div className="select-value">{current}</div>
               <div className="select-icon">
@@ -88,18 +60,21 @@ function Portfolio() {
             </ul>
           </div>
 
+          {/* Projects List */}
           <ul className="project-list">
             {projects
               .filter(
                 (project) => current === "All" || project.category === current
               )
               .map((project, index) => (
-                <li className="project-item  active" key={index}>
+                <li className="project-item active" key={index}>
                   <a href="#">
                     <figure className="project-img">
-                      <div className="project-item-icon-box">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </div>
+                      <button onClick={() => handelModal(project)}>
+                        <div className="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                      </button>
                       <img
                         src={`${project.imgSrc}`}
                         alt={project.alt}
@@ -121,6 +96,14 @@ function Portfolio() {
             </p>
           )}
         </section>
+
+        {/* Modal Display */}
+        {selectedProject && (
+          <Modal
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
       </Pagebg>
     </>
   );

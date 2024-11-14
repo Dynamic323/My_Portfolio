@@ -17,14 +17,14 @@ function Resume() {
           </div>
 
           <ol className="timeline-list">
-            <li className="timeline-item">
+            {/* <li className="timeline-item">
               <h4 className="h4 timeline-item-title">University of Delsul</h4>
               <span>2025 —</span>
               <p className="timeline-text">
                 Enrolled as a student, ready to embark on a journey of higher
                 education and skill development.
               </p>
-            </li>
+            </li> */}
 
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title">
@@ -61,7 +61,7 @@ function Resume() {
               <h4 className="h4 timeline-item-title">
                 Tutor at Code Academy Sarutech
               </h4>
-              <span>2021 — Present</span>
+              <span>2023 — Present</span>
               <p className="timeline-text">
                 As a tutor at{" "}
                 <a
@@ -78,7 +78,7 @@ function Resume() {
               </p>
               <p className="timeline-text">
                 <a
-                  href="https://github.com/yourusername" // Replace with your live project link
+                  href="https://github.com/Dynamic323" // Replace with your live project link
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -92,7 +92,7 @@ function Resume() {
               <h4 className="h4 timeline-item-title">
                 Full-Stack Web Developer
               </h4>
-              <span>2019 — 2021</span>
+              <span>2022 — Present</span>
               <p className="timeline-text">
                 Worked as a freelance web developer, building various websites
                 and applications for clients. Proficient in HTML, CSS,
@@ -102,7 +102,7 @@ function Resume() {
 
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title">Senior Web Developer</h4>
-              <span>2022 — 2024</span>
+              <span>2023 — Present</span>
               <p className="timeline-text">
                 Gained valuable experience as a senior developer, working on
                 both front-end and back-end tasks, implementing UI designs, and

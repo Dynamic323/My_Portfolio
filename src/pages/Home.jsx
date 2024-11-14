@@ -125,7 +125,7 @@ function Home() {
         </section>
 
         <section>
-          <h3 className="h3">My Skills</h3>
+          <h3 className="h3 myskillh3" >My Skills</h3>
           <div className="text-stack">
             {skillsList.map((skill) => (
               <button
@@ -196,37 +196,37 @@ function Home() {
           <ul className="skills-list content-card">
             <li className="skills-item">
               <div className="title-wrapper">
-                <h5 className="h5">Web design</h5>
-                <data value="80">80%</data>
+                <h5 className="h5">Front End</h5>
+                <data value="80">90%</data>
               </div>
               <div className="skill-progress-bg">
                 <div
                   className="skill-progress-fill"
-                  style={{ width: "80%" }}
+                  style={{ width: "90%" }}
                 ></div>
               </div>
             </li>
             <li className="skills-item">
               <div className="title-wrapper">
                 <h5 className="h5">Back end</h5>
-                <data value="70">70%</data>
+                <data value="75">75%</data>
               </div>
               <div className="skill-progress-bg">
                 <div
                   className="skill-progress-fill"
-                  style={{ width: "70%" }}
+                  style={{ width: "75%" }}
                 ></div>
               </div>
             </li>
             <li className="skills-item">
               <div className="title-wrapper">
                 <h5 className="h5">Mobile App</h5>
-                <data value="90">90%</data>
+                <data value="60">65%</data>
               </div>
               <div className="skill-progress-bg">
                 <div
                   className="skill-progress-fill"
-                  style={{ width: "90%" }}
+                  style={{ width: "65%" }}
                 ></div>
               </div>
             </li>
