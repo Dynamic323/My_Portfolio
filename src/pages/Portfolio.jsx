@@ -68,7 +68,7 @@ function Portfolio() {
               )
               .map((project, index) => (
                 <li className="project-item active" key={index}>
-                  <a href="">
+                  {/* <a href=""> */}
                     <figure className="project-img">
                       <button onClick={() => handelModal(project)}>
                         <div className="project-item-icon-box">
@@ -83,7 +83,7 @@ function Portfolio() {
                     </figure>
                     <h3 className="project-title">{project.title}</h3>
                     <p className="project-category">{project.category}</p>
-                  </a>
+                  {/* </a> */}
                 </li>
               ))}
           </ul>
