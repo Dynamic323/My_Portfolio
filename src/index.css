@@ -1089,7 +1089,7 @@ main {
   }
 }
 
-.project-item > a {
+.project-item > div {
   width: 100%;
 }
 
@@ -1114,7 +1114,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before {
+.project-item > div:hover .project-img::before {
   background: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -1134,7 +1134,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-item-icon-box {
+.project-item > div:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -1150,7 +1150,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover img {
+.project-item > div:hover img {
   transform: scale(1.1);
 }
 
