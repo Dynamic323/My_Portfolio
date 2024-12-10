@@ -116,7 +116,7 @@ function Home() {
           <p className="h3">Hello ! 👋,</p>
           <p>
             I'm Israel—a full-stack developer who brings ideas to life on the
-            web and mobile 📱💻. With 3 years of experience, I craft seamless
+            web and mobile 📱💻. With 2 years of experience, I craft seamless
             user experiences with React.js and React Native, and build reliable
             backends using Laravel and Node.js. I’m all about delivering
             top-notch solutions that make an impact and continually sharpening
@@ -125,7 +125,7 @@ function Home() {
         </section>
 
         <section>
-          <h3 className="h3 myskillh3" >My Skills</h3>
+          <h3 className="h3 myskillh3">My Skills</h3>
           <div className="text-stack">
             {skillsList.map((skill) => (
               <button
