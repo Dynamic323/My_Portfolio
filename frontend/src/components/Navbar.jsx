@@ -46,6 +46,18 @@ const Navbar = () => {
         </li>
 
         <li className="navbar-item">
+          <Link to="/blog">
+            <button
+              className={`navbar-link ${
+                location.pathname === "/blog" ? "active" : ""
+              }`}
+            >
+              Blog
+            </button>
+          </Link>
+        </li>
+
+        <li className="navbar-item">
           <Link to="/contact">
             <button
               className={`navbar-link ${
@@ -56,6 +68,7 @@ const Navbar = () => {
             </button>
           </Link>
         </li>
+       
       </ul>
     </nav>
   );
