@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Login from "./Admin/Auth/Login";
 import Dashboard from "./Admin/index"; // You'll need to create this component
 import ProtectedRoutes from "./ProtectedRoutes";
+import Blog from "./pages/Blog";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ export const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+
+      {
+        path: "blog",
+        element: <Blog />,
       },
     ],
   },
