@@ -1397,6 +1397,8 @@ textarea.form-input::-webkit-resizer {
   justify-content: center;
   align-items: center;
   gap: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .text-stack button {

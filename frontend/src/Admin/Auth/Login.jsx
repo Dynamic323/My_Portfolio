@@ -2,23 +2,41 @@
 
 import { useState } from "react";
 import "./admin-login.css";
-
+import { loginuser } from "../api";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
-
-  const handleSubmit = (e) => {
+  const [isloading, setIsLoading] = useState(false);
+  const [error, setError] = useState("");
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Login attempt with:", { email, password, rememberMe });
-    // Add your authentication logic here
 
-
-
-    if (email=="" || password == "" ) {
-        alert("error wereh  ")
+    if (!email || !password) {
+      setError("Please fill in all fields");
+      return;
     }
 
+    setIsLoading(true);
+    setError("");
+
+    try {
+      const credentials = { email, password, rememberMe };
+      const response = await loginUser(credentials);
+
+      // Handle successful login (store token, redirect, etc.)
+      console.log("Login successful:", response);
+
+      // Example: Store token and redirect
+      if (response.token) {
+        localStorage.setItem("adminToken", response.token);
+        window.location.href = "/admin/dashboard";
+      }
+    } catch (err) {
+      setError(err.message || "Invalid credentials. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -58,7 +76,7 @@ const Login = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="admin@company.com"
-                //   required
+                  //   required
                 />
               </div>
             </div>
@@ -72,7 +90,7 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
-                //   required
+                  //   required
                 />
               </div>
             </div>
@@ -91,7 +109,14 @@ const Login = () => {
               </a>
             </div>
             <button type="submit" className="login-button">
-              Sign In
+              {isloading ? (
+                <>
+                  <span className="spinner"></span>
+                  Logging in...
+                </>
+              ) : (
+                <span>Sign In</span>
+              )}
             </button>
           </form>
           <div className="login-footer">

@@ -11,7 +11,7 @@ function Home() {
     setActiveSkill(selectedSkill);
   };
 
-  const skillsList = ["frontend", "Backend", "App"];
+  const skillsList = ["frontend", "Backend" ];
 
   const frontendSkills = [
     {
@@ -115,7 +115,7 @@ function Home() {
         <section className="about-text">
           <p className="h3">Hello ! 👋,</p>
           <p>
-            I'm Israel—a full-stack developer who brings ideas to life on the
+            I'm Israel a full-stack developer who brings ideas to life on the
             web and mobile 📱💻. With 2 years of experience, I craft seamless
             user experiences with React.js and React Native, and build reliable
             backends using Laravel and Node.js. I’m all about delivering
@@ -173,7 +173,7 @@ function Home() {
                     {tech.icon} {tech.Name}
                   </motion.li>
                 ))}
-              {activeSkill === "App" &&
+              {/* {activeSkill === "App" &&
                 appSkills.map((tech) => (
                   <motion.li
                     key={tech.Name}
@@ -186,7 +186,7 @@ function Home() {
                   >
                     {tech.icon} {tech.Name}
                   </motion.li>
-                ))}
+                ))} */}
             </motion.ul>
           </div>
         </section>

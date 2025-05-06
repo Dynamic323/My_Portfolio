@@ -39,7 +39,7 @@ function Layout({ children }) {
             <h1 className="name" title="Richard Hanrick">
               Dy coderx
             </h1>
-            <button className="title">Download Cv</button>
+            <button className="title"> <a style={{backgroundColor:"transparent", color:"white"}} href="https://drive.google.com/file/d/10ieDgDcxiWAZ7N7ckFo69Bz_o13wYeeC/view?usp=sharing">Acess Cv</a></button>
           </div>
 
           <button

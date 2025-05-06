@@ -1,4 +1,6 @@
 import React from "react";
+import Pagebg from "../components/Pagebg";
+import Navbar from "../components/Navbar";
 
 function Blog() {
   // Blog data in JSON format
@@ -61,9 +63,8 @@ function Blog() {
 
   return (
     <div className="blog" data-page="blog">
-      <header>
-        <h2 className="h2 article-title">Blog</h2>
-      </header>
+      <Navbar />
+      <Pagebg title="Resume">
 
       <section className="blog-posts">
         <ul className="blog-posts-list">
@@ -89,6 +90,8 @@ function Blog() {
           ))}
         </ul>
       </section>
+
+      </Pagebg>
     </div>
   );
 }

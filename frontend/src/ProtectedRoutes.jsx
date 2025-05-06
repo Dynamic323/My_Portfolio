@@ -7,7 +7,7 @@ const ProtectedRoutes = ({ Children }) => {
 
   useEffect(() => {
     if (!token) {
-      naviga("/admin");
+      naviga("/admin"); 
     }
   }, [token, naviga]);
 
