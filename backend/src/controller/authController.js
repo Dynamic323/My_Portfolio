@@ -122,3 +122,18 @@ exports.login = async (req, res, next) => {
     });
   }
 };
+
+exports.logout = (req, res) => {
+  res.cookie("token", "", {
+    path: "/",
+    httpOnly: true,
+    expires: new Date(0), // expire immediately
+    sameSite: "none",
+    secure: true,
+  });
+
+  res.status(200).json({
+    status: "success",
+    message: "Logged out successfully",
+  });
+};

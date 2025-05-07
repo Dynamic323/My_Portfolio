@@ -12,7 +12,7 @@ const loginLimiter = rateLimit({
     status: "error",
     message: "Too many login attempts, please try again later",
   },
-  handler: (req, res) => {  
+  handler: (req, res) => {
     res.status(429).json({
       status: "error",
       message: "Too many login attempts, please try again later",
@@ -25,6 +25,7 @@ routes.get("/", publicController.startApi);
 
 // Admin Authentication Routes
 routes.post("/admin/login", loginLimiter, authController.login);
-routes.post("/admin/register",  authController.register);
+routes.post("/admin/register", authController.register);
+routes.get("/admin/logout", authController.logout);
 
 module.exports = routes;

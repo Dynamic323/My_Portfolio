@@ -7,9 +7,9 @@ import { Outlet } from "react-router-dom";
 function App() {
   return (
     <>
-     <Layout>
-      <Outlet/>
-     </Layout>
+      <Layout>
+        <Outlet />
+      </Layout>
     </>
   );
 }
