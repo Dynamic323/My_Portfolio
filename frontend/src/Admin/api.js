@@ -1,7 +1,7 @@
 const backendUrl = "http://localhost:2000";
-export const loginuser = async (cridentials) => {
+export const loginUser = async (cridentials) => {
   try {
-    const res = fetch(`${backendUrl}/api/admin/login`, {
+    const response = fetch(`${backendUrl}/api/admin/login`, {
       method: "POST",
       headers: {
         "Content-Type": "applicatiion/json",
@@ -19,7 +19,7 @@ export const loginuser = async (cridentials) => {
 
     const data = await response.json();
     return data;
-  } catch (err) {
+  } catch (error) {
     console.error("Login error:", error);
     throw error; // Re-throw for handling in component
   }

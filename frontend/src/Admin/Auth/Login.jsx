@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import "./admin-login.css";
-import { loginuser } from "../api";
+import {  loginUser } from "../api"; // Capital "U"
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -12,18 +12,18 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setIsLoading(true);
     if (!email || !password) {
       setError("Please fill in all fields");
+      setIsLoading(false);
       return;
     }
 
-    setIsLoading(true);
     setError("");
 
     try {
       const credentials = { email, password, rememberMe };
       const response = await loginUser(credentials);
-
       // Handle successful login (store token, redirect, etc.)
       console.log("Login successful:", response);
 
