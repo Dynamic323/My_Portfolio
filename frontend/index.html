@@ -14,9 +14,19 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/css/ionicons.min.css">
 
-  
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+<script>
+  tsParticles.load("tsparticles", {
+    particles: {
+      number: { value: 50 },
+      size: { value: 3 },
+      move: { speed: 2 },
+      color: { value: "#ff6b00" },
+    },
+  });
+</script>
   </head>
-  <body>
+  <body id="tsparticles">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
