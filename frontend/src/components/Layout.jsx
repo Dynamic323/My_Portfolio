@@ -40,7 +40,6 @@ function Layout({ children }) {
               Dy coderx
             </h1>
             <button className="title">
-              {" "}
               <a
                 style={{ backgroundColor: "transparent", color: "white" }}
                 href="https://drive.google.com/file/d/10yxOwOi6UnWG1tpcttzrmik6L-OLl-II/view?usp=sharing"

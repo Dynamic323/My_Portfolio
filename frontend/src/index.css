@@ -629,7 +629,7 @@ main {
   color: var(--light-gray);
   font-size: var(--fs-5);
   font-weight: var(--fw-300);
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .about-text p {
@@ -1217,7 +1217,7 @@ main {
 
 .blog-posts-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr ;
   gap: 20px;
 }
 
@@ -2233,7 +2233,7 @@ textarea.form-input::-webkit-resizer {
 
   .project-list,
   .blog-posts-list {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr  ;
   }
 
   /**

@@ -7,24 +7,26 @@ function Resume() {
     <>
       <Navbar />
       <Pagebg title="Resume">
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
+        {/* Education Section */}
+        <section className="timeline">
+          <div className="title-wrapper">
+            <div className="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
-            <h3 class="h3">Education</h3>
+            <h3 className="h3">Education</h3>
           </div>
 
           <ol className="timeline-list">
-            {/* <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">University of Delsul</h4>
-              <span>2025 —</span>
+            <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">
+                University of Benin (UNIBEN)
+              </h4>
+              <span>2025 — Present</span>
               <p className="timeline-text">
-                Enrolled as a student, ready to embark on a journey of higher
-                education and skill development.
+                Bachelor of Science (in progress). Currently pursuing a degree
+                in Computer Science.
               </p>
-            </li> */}
+            </li>
 
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title">
@@ -48,7 +50,8 @@ function Resume() {
           </ol>
         </section>
 
-        <section class="timeline">
+        {/* Experience Section */}
+        <section className="timeline">
           <div className="title-wrapper">
             <div className="icon-box">
               <ion-icon name="book-outline"></ion-icon>
@@ -59,7 +62,64 @@ function Resume() {
           <ol className="timeline-list">
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title">
-                Tutor at Code Academy Sarutech
+                Co-founder & Frontend Engineer — CocoBase
+              </h4>
+              <span>Aug 2025 — Present</span>
+              <p className="timeline-text">
+                Connecting front-end to back-end, building stunning visuals, and
+                shaping the UI/UX direction of the Backend-as-a-Service (BaaS)
+                platform.
+              </p>
+            </li>
+
+            <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">
+                Frontend Engineer — Instantly Analytics Dashboard
+              </h4>
+              <span>2025 — Present</span>
+              <p className="timeline-text">
+                Built and integrated React-based analytics dashboards with a
+                Node.js backend to visualize and analyze user data effectively.
+              </p>
+            </li>
+
+          
+
+            <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">
+                Collaborator — X-payee (Crypto Investment Platform)
+              </h4>
+              <span>2024 — 2025</span>
+              <p className="timeline-text">
+                Collaborated with senior backend developer Ace to build a
+                functional UI, integrate backend APIs, and fix production bugs
+                on a crypto investment platform with complex investment logic.
+              </p>
+            </li>
+
+            <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">
+                Full-Stack Developer — DyshareX, Replico, Movieo, Theograph, Emi Aluge Investment
+              </h4>
+              <span>2023 — Present</span>
+              <p className="timeline-text">
+                Worked on multiple full-stack projects including:
+                DyshareX (file/code sharing platform), Replico (website
+                downloader), Movieo (React + Laravel movie site), Theograph
+                (GitHub graph automation), and Emi Aluge Investment website
+                (<a
+                  href="https://emialugeinvestment.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  https://emialugeinvestment.com/
+                </a>).
+              </p>
+            </li>
+
+            <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">
+                Tutor — Code Academy Sarutech
               </h4>
               <span>2023 — Present</span>
               <p className="timeline-text">
@@ -71,42 +131,27 @@ function Resume() {
                 >
                   Code Academy Sarutech
                 </a>
-                I have taught many students and helped them develop their skills
-                in web development, programming, and more. I have also built
-                several live projects that students can interact with and learn
-                from.
-              </p>
-              <p className="timeline-text">
-                <a
-                  href="https://github.com/Dynamic323" // Replace with your live project link
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  See my work
-                </a>
-                and explore some of the projects I have worked on.
+                , taught students front-end and React development using a custom
+                React Roadmap, mentoring multiple classes and building live
+                interactive projects.
               </p>
             </li>
-
+  <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">Lead Developer — Seasonal Greetings</h4>
+              <span>2024 — 2025</span>
+              <p className="timeline-text">
+                Led the development of a festival scheduling platform that lets
+                users send personalized greetings that unlock on specific
+                festival dates.
+              </p>
+            </li>
             <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">
-                Full-Stack Web Developer
-              </h4>
+              <h4 className="h4 timeline-item-title">Full-Stack Web Developer</h4>
               <span>2022 — Present</span>
               <p className="timeline-text">
-                Worked as a freelance web developer, building various websites
-                and applications for clients. Proficient in HTML, CSS,
-                JavaScript, and various frameworks like React and Laravel.
-              </p>
-            </li>
-
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">Senior Web Developer</h4>
-              <span>2023 — Present</span>
-              <p className="timeline-text">
-                Gained valuable experience as a senior developer, working on
-                both front-end and back-end tasks, implementing UI designs, and
-                integrating APIs for dynamic content.
+                Freelance developer delivering modern, responsive websites using
+                React, Node.js, Laravel, and Firebase. Focused on creating
+                user-centered, performant, and maintainable solutions.
               </p>
             </li>
           </ol>
