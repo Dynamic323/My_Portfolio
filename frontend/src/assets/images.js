@@ -17,7 +17,6 @@ import net_downloader1 from "../../public/images/netdownloader/netdownloader1.pn
 import net_downloader2 from "../../public/images/netdownloader/netdownloader2.jpg";
 
 
-   {shortenAddress(withdrawal.usdt_wallet_address)}
 // Mexant
 import mexant1 from "../../public/images/mexant/mexant1.jpg";
 import mexant2 from "../../public/images/mexant/mexant2.jpg";
