@@ -1,16 +1,32 @@
 import { images } from "./assets";
+
 const portfolio = ["All", "Frontend", "Backend", "Mobile", "Fullstack"];
+
 const projects = [
+  {
+    title: "Coco Mailer",
+    category: "Fullstack",
+    imgSrc: images.cocomailer,
+    url: "https://coco-mailer.vercel.app/",
+    alt: "Coco Mailer",
+    description:
+      "An email delivery and automation tool under the CocoBase ecosystem. My Role was redesign the UI We Had before to this curent version, and fix  some bugs to improve Smooth connections.",
+    languages: ["React", "Fast Api", "Tailwind CSS"],
+    additionalImages: [
+      images.cocomailer,
+      images.cocomailer2,
+      images.cocomailer3,
+    ],
+  },
   {
     title: "Movieo",
     category: "Fullstack",
     imgSrc: images.movie1,
     alt: "movieo",
     description:
-      "A full-stack website designed for downloading the latest movies and streaming trailers.",
-    languages: ["react", "laravel", "html", "Tailwind css"],
+      "A full-stack movie website built with React and Laravel, allowing users to stream trailers and download the latest movies. It also include an Admin pannel where Admin can Post Movies that will be shown on the website. ",
+    languages: ["React", "Laravel", "HTML", "Tailwind CSS"],
     githubUrl: "https://github.com/Dynamic323/Dy_Em-movie",
-    url: "",
     additionalImages: [
       images.movie1,
       images.movie2,
@@ -22,128 +38,147 @@ const projects = [
       images.movie8,
     ],
   },
-  // {
-  //   title: "Mexant",
-  //   category: "Fullstack",
-  //   imgSrc: images.mexant1,
-  //   alt: "mexant",
-  //   url: "https://mexant.com.ng/",
-  //   // githubUrl: "https://github.com/yourusername/mexanto",
-  //   description:
-  //     "Mexanto is a forex broker website that provides comprehensive trading tools and resources for investors.",
-  //   languages: ["php", "laravel", "html"],
-  //   additionalImages: [images.mexant1, images.mexant2, images.mexant3],
-  // },
   {
-    title: "Net downloader",
+    title: "DyshareX",
+    category: "Fullstack",
+    imgSrc: images.dysharex1,
+    alt: "DyshareX",
+    url: "https://dysharex.pxxl.click/",
+    description:
+      "A modern file and code sharing platform with instant link generation, privacy controls, analytics, and custom slugs.",
+    languages: ["React", "Node.js", "Firebase", "Tailwind CSS"],
+    additionalImages: [images.dysharex1, images.dysharex2, images.dysharex3],
+  },
+  {
+    title: "Net Downloader",
     category: "Frontend",
     imgSrc: images.net_downloader1,
     alt: "netdownloader",
     url: "https://net-downloader-em.vercel.app/",
     description:
-      "Netdownloader is a website that allows you to download videos from YouTube, Facebook, and TikTok. Simply copy and paste the video URL, and you can even download multiple videos at once.",
-    languages: ["React", "css"],
+      "A React web app that lets users download videos from YouTube, Facebook, ig, and TikTok. Supports batch downloads via pasted URLs.",
+    languages: ["React", "CSS"],
     additionalImages: [images.net_downloader1, images.net_downloader2],
+  },
+
+  {
+    title: "Replico",
+    category: "Fullstack",
+    imgSrc: images.replico1,
+    alt: "Replico",
+    description:
+      "A website downloader powered by Puppeteer. Allows users to download entire websites easily with authentication via Firebase.",
+    languages: ["React", "Node.js", "Express", "Coco Base"],
+  },
+  {
+    title: "CocoBase",
+    category: "Fullstack",
+    imgSrc: images.cocobase1,
+    url: "https://cocobaselanding.pxxl.click/",
+    alt: "CocoBase",
+    // description:
+    //   "A Backend-as-a-Service (BaaS) platform. I worked as co-founder and front-end engineer, integrating frontend with backend and building stunning visuals.",
+    description:
+      "A Backend-as-a-Service (BaaS) platform. I'm working as front-end engineer, integrating frontend with backend and building stunning visuals.",
+    languages: ["Next.js", "Node.js", "Firebase", "Tailwind CSS"],
+  },
+
+  {
+    title: "X-Payee",
+    category: "Fullstack",
+    imgSrc: images.xpay,
+    alt: "X-Payee",
+    url: "https://www.x-payee.com/",
+    description:
+      "An investment and payment platform built in collaboration with senior backend developer Ace. Implemented complex investment logic and a seamless UI.",
+    languages: ["React", "Express", "Node.js", "MongoDB"],
+    additionalImages: [images.xpay, images.xpay2],
+  },
+  // {
+  //   title: "Theograph",
+  //   category: "Backend",
+  //   imgSrc: images.theograph1,
+  //   alt: "Theograph",
+  //   description:
+  //     "An automation tool that generates GitHub contribution graph commits automatically. Built for developers to keep their graph consistent.",
+  //   languages: ["Node.js", "Express", "GitHub API"],
+  // },
+  {
+    title: "Instantly Analytics Dashboard",
+    category: "Fullstack",
+    imgSrc: images.instantly,
+    url: "https://instantly-analytics-project.vercel.app/",
+    alt: "Instantly Analytics",
+    description:
+      "A React + Node.js analytics dashboard visualizing API data and complex metrics. Focused on handling large datasets and dynamic UI updates.",
+    languages: ["React", "Node.js", "Chart.js", "Tailwind CSS"],
+  },
+  {
+    title: "Seasonal Greetings",
+    category: "Fullstack",
+    imgSrc: images.seasonalW1,
+    alt: "Seasonal Greetings",
+    url: "https://seeasonal-wishes-fnd.vercel.app/",
+    description:
+      "A scheduling platform where users can create personalized festival greetings that unlock automatically on the event date.",
+    languages: ["React", "Firebase", "Tailwind CSS"],
+    additionalImages: [images.seasonalW1, images.seasonalW2],
+  },
+  {
+    title: "Emi Aluge Investment",
+    category: "Frontend",
+    imgSrc: images.emialuge3,
+    alt: "Emi Aluge Investment",
+    url: "https://emialugeinvestment.com/",
+    description:
+      "Official website for Emi Aluge Investment — a company specializing in Pure Water and Premium Bakery Water products.",
+    languages: ["React", "CSS", "HTML"],
+    additionalImages: [images.emialuge1, images.emialuge2, images.emialuge3],
   },
   {
     title: "Sunwave Clone",
     category: "Fullstack",
     imgSrc: images.sunwaveclone1,
-    alt: "Sun wave",
-    url: "",
+    alt: "Sunwave Clone",
     githubUrl: "https://github.com/Dynamic323/",
-    description: "Sunwave clone with Php ",
-    languages: ["PHP", "Html", "Css"],
+    description:
+      "A Sunwave clone web app recreated using PHP for learning and practice.",
+    languages: ["PHP", "HTML", "CSS"],
     additionalImages: [
       images.sunwaveclone1,
-      images.sunwaveclone3,
       images.sunwaveclone2,
+      images.sunwaveclone3,
     ],
   },
-  // {
-  //   title: "Joycaring",
-  //   category: "Frontend",
-  //   imgSrc: images.joycaring1,
-  //   alt: "joycaring",
-  //   url: "",
-  //   githubUrl: "https://github.com/Dynamic323/Medical_web",
-  //   description: "A medical website ",
-  //   languages: ["Bootstrap", "React"],
-  //   additionalImages: [images.joycaring1, images.joycaring2],
-  // },
-  // {
-  //   title: "Portfolio",
-  //   category: "Frontend",
-  //   imgSrc: images.portfoliody,
-  //   alt: "portfolio",
-  //   url: "",
-  //   description: "A Simple portfolio with html and css",
-  //   languages: ["Html", "Css"],
-  // },
-  // {
-  //   title: "Glass from",
-  //   category: "Frontend",
-  //   imgSrc: images.Glass_effects,
-  //   alt: "portfolio",
-  //   url: "",
-  //   // description: "A medical website ",
-  //   languages: ["Html", "Css"],
-  // },
   {
-    title: "Blog website",
+    title: "Blog Website",
     category: "Backend",
     imgSrc: images.laravelblog,
-    alt: "blog",
-    url: "",
+    alt: "Blog",
     githubUrl: "https://github.com/Dynamic323/laravel_blog-web",
-
-    description: "I created a blog wesite while leaning laravel ",
-    languages: ["laravel", "tailwind css"],
+    description:
+      "A Laravel blog website built while learning the framework. Implements authentication and CRUD features.",
+    languages: ["Laravel", "Tailwind CSS"],
   },
   {
-    title: "Crud With PHP",
-    category: "Web design",
+    title: "CRUD with PHP",
+    category: "Frontend",
     imgSrc: images.crud,
-    alt: "crd ",
-    url: "",
-    description: "A crud Application With Pure php ",
-    languages: ["html", "Php", "bootstrap"],
+    alt: "CRUD App",
+    description:
+      "A simple CRUD application built using pure PHP and Bootstrap.",
+    languages: ["HTML", "PHP", "Bootstrap"],
   },
   {
     title: "MyClassList",
-    category: "Web design",
+    category: "Fullstack",
     imgSrc: images.myclasslist1,
-    description:"A platform that allows users to log in and manage their own student lists, where they can view and edit only the students they have created, ensuring personalized and secure management.",
-    alt: "crd ",
-    url: "",
-    languages: ["laravel", "tailwind"],
+    alt: "MyClassList",
+    description:
+      "A student management platform where users can manage their own student lists securely, with authentication and CRUD features.",
+    languages: ["Laravel", "Tailwind CSS"],
     additionalImages: [images.myclasslist1, images.myclasslist2],
   },
-  // {
-  //   title: "Opay ui Clone",
-  //   category: "Mobile",
-  //   imgSrc: images.opayclone,
-  //   description: "A Soft Opay ui clone with react Native 😊",
-  //   alt: "crd ",
-  //   url: "",
-  //   languages: ["React Native"],
-  //   additionalImages: [images.opayclone],
-  // },
 ];
 
 export default projects;
-
-
-// DyshareX 
-// Replico 
-// Instantly 
-// Coco mailer (I re-desing Coco mailer to give it the stunting ui it has now )
-// Ccoco Base 
-// Movieo (a movie website bult with react front-end and laravel backend)
-// Emi Aluge Investment Pure Water & Premium Bakery Water  the link https://emialugeinvestment.com/ 
-// X-payee (I collaborated with dev Ace a senior backend dev to for on x-payee which is a full stack crypto investment platform with complrx inestment logic my work was to build functional ui and connect them to the backend and fix some ugs that arose during production  ) 
-// Seasonal Greetings (Worked as a lead developer for this seasonal greetigns platfrom a website that uu can go and schedue greetings)
-
-// Expreience   JOin Project COCO in 11 August 2025 till date and my work there is front end eginner connecting the front end with the backend and creating stuncting visuaal 
-
-// Theograph  (a tool for hacking github graph making multiple commits )

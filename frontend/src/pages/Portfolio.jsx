@@ -4,6 +4,7 @@ import Pagebg from "../components/Pagebg";
 import { images } from "../assets";
 import Modal from "../components/Modal";
 import projects from "../Project_data";
+
 function Portfolio() {
   const [current, setCurrent] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -20,6 +21,7 @@ function Portfolio() {
   const handelModal = (item) => {
     setSelectedProject(item);
   };
+
   const portfolio = ["All", "Frontend", "Fullstack", "Mobile", "Backend"];
 
   return (
@@ -40,7 +42,6 @@ function Portfolio() {
               </li>
             ))}
           </ul>
-
           <div className="filter-select-box">
             <button
               className={`filter-select ${isDropdownVisible ? "active" : ""}`}
@@ -59,7 +60,6 @@ function Portfolio() {
               ))}
             </ul>
           </div>
-
           {/* Projects List */}
           <ul className="project-list">
             {projects
@@ -68,8 +68,7 @@ function Portfolio() {
               )
               .map((project, index) => (
                 <li className="project-item active" key={index}>
-                  {/* <a href=""> */}
-                  <div className="">
+                  <div>
                     <figure className="project-img">
                       <button onClick={() => handelModal(project)}>
                         <div className="project-item-icon-box">
@@ -80,16 +79,28 @@ function Portfolio() {
                         src={`${project.imgSrc}`}
                         alt={project.alt}
                         loading="lazy"
+                        onLoad={(e) => e.target.classList.add("loaded")}
+                        onError={(e) => e.target.classList.add("loaded")}
                       />
+                      <div className="project-skeleton-loader"></div>
                     </figure>
                     <h3 className="project-title">{project.title}</h3>
-                    <p className="project-category">{project.category}</p>
+                    <p className="project-category ">{project.category}</p>
+                    <p className="project-description ">
+                      {project.description.split(" ").slice(0, 6).join(" ")}...{" "}
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-orange-500 hover:underline"
+                      >
+                        view project
+                      </a>
+                    </p>
                   </div>
-                  {/* </a> */}
                 </li>
               ))}
           </ul>
-
           {projects.filter(
             (project) => current === "All" || project.category === current
           ).length === 0 && (
@@ -98,7 +109,6 @@ function Portfolio() {
             </p>
           )}
         </section>
-
         {/* Modal Display */}
         {selectedProject && (
           <Modal

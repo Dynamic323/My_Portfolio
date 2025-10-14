@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 function Modal({ project, onClose }) {
   if (!project) return null;
-
   const [mainImage, setMainImage] = useState(project.imgSrc);
 
   return (
@@ -11,17 +10,21 @@ function Modal({ project, onClose }) {
         <button className="close-button" onClick={onClose}>
           &times;
         </button>
-
         <div className="modal-grid">
           <div className="main-image-container">
-            <img src={mainImage} alt={project.alt} className="main-image" />
+            <img
+              src={mainImage}
+              alt={project.alt}
+              className="main-image"
+              onLoad={(e) => e.target.classList.add("loaded")}
+              onError={(e) => e.target.classList.add("loaded")}
+            />
+            <div className="skeleton-loader"></div>
           </div>
-
           <div className="project-info">
             <h2 className="modal-title">{project.title}</h2>
             <p className="modal-category">{project.category}</p>
             <p className="modal-description">{project.description}</p>
-
             <div className="languages-container">
               <h3>Languages used:</h3>
               <div className="languages-list">
@@ -32,7 +35,6 @@ function Modal({ project, onClose }) {
                 ))}
               </div>
             </div>
-
             <div className="button-container">
               <a
                 href={
@@ -89,19 +91,22 @@ function Modal({ project, onClose }) {
             </div>
           </div>
         </div>
-
         {project.additionalImages && project.additionalImages.length > 0 && (
           <div className="additional-images">
             <h3>Project Screenshots:</h3>
             <div className="image-scroll-container">
               {project.additionalImages.map((image, index) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt={`Screenshot ${index + 1}`}
-                  onClick={() => setMainImage(image)}
-                  className="gallery-image"
-                />
+                <div key={index} style={{ position: "relative", overflow: "hidden" }}>
+                  <img
+                    src={image}
+                    alt={`Screenshot ${index + 1}`}
+                    onClick={() => setMainImage(image)}
+                    className="gallery-image"
+                    onLoad={(e) => e.target.classList.add("loaded")}
+                    onError={(e) => e.target.classList.add("loaded")}
+                  />
+                  <div className="skeleton-loader"></div>
+                </div>
               ))}
             </div>
           </div>
