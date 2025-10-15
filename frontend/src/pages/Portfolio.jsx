@@ -85,17 +85,20 @@ function Portfolio() {
                       <div className="project-skeleton-loader"></div>
                     </figure>
                     <h3 className="project-title">{project.title}</h3>
-                    <p className="project-category ">{project.category}</p>
-                    <p className="project-description ">
-                      {project.description.split(" ").slice(0, 6).join(" ")}...{" "}
-                      <a
-                        href={project.link}
+                    {/* <p className="project-category ">{project.category}</p> */}
+                    <p className={`project-description  `}>
+                      <span>
+                        {project.description.split(" ").slice(0, 5).join(" ")}
+                        ...{" "}
+                      </span>
+                      {/* <a
+                        href={project.url ||  "https://dy-commingsoon.vercel.app"}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-orange-500 hover:underline"
+                        className="text-orange-500 hover:underline link project-description "
                       >
                         view project
-                      </a>
+                      </a> */}
                     </p>
                   </div>
                 </li>

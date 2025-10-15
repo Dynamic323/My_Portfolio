@@ -16,7 +16,6 @@ import movie8 from "../../public/images/Movieo/preview8.jpg";
 import net_downloader1 from "../../public/images/netdownloader/netdownloader1.png";
 import net_downloader2 from "../../public/images/netdownloader/netdownloader2.jpg";
 
-
 // Mexant
 import mexant1 from "../../public/images/mexant/mexant1.jpg";
 import mexant2 from "../../public/images/mexant/mexant2.jpg";
@@ -67,10 +66,13 @@ import xpay2 from "../../public/images/xpay/xpay2.png";
 import seasonalW1 from "../../public/images/seasonalWishes/s1.png";
 import seasonalW2 from "../../public/images/seasonalWishes/s2.png";
 
+import emialuge1 from "../../public/images/em_Investment/em1.png";
+import emialuge2 from "../../public/images/em_Investment/em2.png";
+import emialuge3 from "../../public/images/em_Investment/em3.png";
 
-import emialuge1 from "../../public/images/em_Investment/em1.png"
-import emialuge2 from "../../public/images/em_Investment/em2.png"
-import emialuge3 from "../../public/images/em_Investment/em3.png"
+import dp from "../../public/images/dp-removebg-preview.png";
+
+import dp_test from "../../public/testdp-removebg-preview.png";
 
 export default {
   dysharex1,
@@ -101,6 +103,8 @@ export default {
   emialuge1,
   emialuge2,
   emialuge3,
+  dp,
+  dp_test,
 
   xpay,
   xpay2,

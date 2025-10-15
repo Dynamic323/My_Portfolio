@@ -32,7 +32,7 @@ function Layout({ children }) {
       <div className="sidebar" data-sidebar ref={sidebarRef}>
         <div className="sidebar-info">
           <figure className="avatar-box">
-            <img src={images.profile} alt="Richard Hanrick" width="80" />
+            <img src={images.dp} alt="Richard Hanrick" width="80" />
           </figure>
 
           <div className="info-content">
