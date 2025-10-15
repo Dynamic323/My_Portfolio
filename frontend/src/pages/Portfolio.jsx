@@ -112,7 +112,6 @@ function Portfolio() {
             </p>
           )}
         </section>
-        {/* Modal Display */}
         {selectedProject && (
           <Modal
             project={selectedProject}
