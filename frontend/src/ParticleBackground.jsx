@@ -26,12 +26,12 @@ const ParticleBackground = () => {
       moonGlowSpeed: 0.02,         // How fast moon pulses (lower = slower)
       
       // Shooting star settings
-      shootingStarFrequency: 0.995, // Higher = less frequent (0.99 = more, 0.999 = less)
-      shootingStarMinLength: 60,   // Minimum trail length
-      shootingStarMaxLength: 120,  // Maximum trail length
-      shootingStarMinSpeed: 4,     // Minimum speed
-      shootingStarMaxSpeed: 7,     // Maximum speed
-      shootingStarFadeSpeed: 0.008, // How fast they fade (higher = faster fade)
+      // shootingStarFrequency: 0.995, // Higher = less frequent (0.99 = more, 0.999 = less)
+      // shootingStarMinLength: 60,   // Minimum trail length
+      // shootingStarMaxLength: 120,  // Maximum trail length
+      // shootingStarMinSpeed: 4,     // Minimum speed
+      // shootingStarMaxSpeed: 7,     // Maximum speed
+      // shootingStarFadeSpeed: 0.008, // How fast they fade (higher = faster fade)
       
       // Performance
       useRequestAnimationFrame: true, // Set to false if experiencing lag
@@ -49,22 +49,22 @@ const ParticleBackground = () => {
     }));
 
     // Shooting stars array
-    const shootingStars = [];
+    // const shootingStars = [];
     
     // Create shooting star from moon position
-    const createShootingStar = () => {
-      if (Math.random() > CONFIG.shootingStarFrequency) {
-        const moonPos = getMoonPosition();
-        shootingStars.push({
-          x: moonPos.x,
-          y: moonPos.y,
-          length: Math.random() * (CONFIG.shootingStarMaxLength - CONFIG.shootingStarMinLength) + CONFIG.shootingStarMinLength,
-          speed: Math.random() * (CONFIG.shootingStarMaxSpeed - CONFIG.shootingStarMinSpeed) + CONFIG.shootingStarMinSpeed,
-          opacity: 1,
-          angle: Math.PI, // Shooting left
-        });
-      }
-    };
+    // const createShootingStar = () => {
+    //   if (Math.random() > CONFIG.shootingStarFrequency) {
+    //     const moonPos = getMoonPosition();
+    //     shootingStars.push({
+    //       x: moonPos.x,
+    //       y: moonPos.y,
+    //       length: Math.random() * (CONFIG.shootingStarMaxLength - CONFIG.shootingStarMinLength) + CONFIG.shootingStarMinLength,
+    //       speed: Math.random() * (CONFIG.shootingStarMaxSpeed - CONFIG.shootingStarMinSpeed) + CONFIG.shootingStarMinSpeed,
+    //       opacity: 1,
+    //       angle: Math.PI, // Shooting left
+    //     });
+    //   }
+    // };
 
     // Moon properties - responsive positioning
     const getMoonPosition = () => {
@@ -191,46 +191,46 @@ const ParticleBackground = () => {
       }
 
       // Create new shooting stars occasionally
-      createShootingStar();
+      // createShootingStar();
 
       // Draw and update shooting stars
-      for (let i = shootingStars.length - 1; i >= 0; i--) {
-        const s = shootingStars[i];
+      // for (let i = shootingStars.length - 1; i >= 0; i--) {
+      //   const s = shootingStars[i];
         
-        // Calculate tail end position
-        const tailX = s.x - Math.cos(s.angle) * s.length;
-        const tailY = s.y - Math.sin(s.angle) * s.length;
+      //   // Calculate tail end position
+      //   const tailX = s.x - Math.cos(s.angle) * s.length;
+      //   const tailY = s.y - Math.sin(s.angle) * s.length;
 
-        // Draw shooting star trail
-        const trailGradient = ctx.createLinearGradient(s.x, s.y, tailX, tailY);
-        trailGradient.addColorStop(0, `rgba(255, 255, 255, ${s.opacity * 0.9})`);
-        trailGradient.addColorStop(0.3, `rgba(200, 220, 255, ${s.opacity * 0.6})`);
-        trailGradient.addColorStop(1, `rgba(200, 220, 255, 0)`);
+      //   // Draw shooting star trail
+      //   const trailGradient = ctx.createLinearGradient(s.x, s.y, tailX, tailY);
+      //   trailGradient.addColorStop(0, `rgba(255, 255, 255, ${s.opacity * 0.9})`);
+      //   trailGradient.addColorStop(0.3, `rgba(200, 220, 255, ${s.opacity * 0.6})`);
+      //   trailGradient.addColorStop(1, `rgba(200, 220, 255, 0)`);
 
-        ctx.strokeStyle = trailGradient;
-        ctx.lineWidth = 2;
-        ctx.lineCap = 'round';
-        ctx.beginPath();
-        ctx.moveTo(s.x, s.y);
-        ctx.lineTo(tailX, tailY);
-        ctx.stroke();
+      //   ctx.strokeStyle = trailGradient;
+      //   ctx.lineWidth = 2;
+      //   ctx.lineCap = 'round';
+      //   ctx.beginPath();
+      //   ctx.moveTo(s.x, s.y);
+      //   ctx.lineTo(tailX, tailY);
+      //   ctx.stroke();
 
-        // Draw bright head
-        ctx.fillStyle = `rgba(255, 255, 255, ${s.opacity})`;
-        ctx.beginPath();
-        ctx.arc(s.x, s.y, 2.5, 0, Math.PI * 2);
-        ctx.fill();
+      //   // Draw bright head
+      //   ctx.fillStyle = `rgba(255, 255, 255, ${s.opacity})`;
+      //   ctx.beginPath();
+      //   ctx.arc(s.x, s.y, 2.5, 0, Math.PI * 2);
+      //   ctx.fill();
 
-        // Update position (moving left)
-        s.x += Math.cos(s.angle) * s.speed;
-        s.y += Math.sin(s.angle) * s.speed * 0.3; // Slight downward angle
-        s.opacity -= CONFIG.shootingStarFadeSpeed;
+      //   // Update position (moving left)
+      //   s.x += Math.cos(s.angle) * s.speed;
+      //   s.y += Math.sin(s.angle) * s.speed * 0.3; // Slight downward angle
+      //   s.opacity -= CONFIG.shootingStarFadeSpeed;
 
-        // Remove if faded or off screen
-        if (s.opacity <= 0 || s.x < -s.length) {
-          shootingStars.splice(i, 1);
-        }
-      }
+      //   // Remove if faded or off screen
+      //   if (s.opacity <= 0 || s.x < -s.length) {
+      //     shootingStars.splice(i, 1);
+      //   }
+      // }
 
       if (CONFIG.useRequestAnimationFrame) {
         requestAnimationFrame(draw);
