@@ -1,0 +1,11 @@
+{
+  "/Blog": "pages/Blog.html",
+  "/Contact": "pages/Contact.html",
+  "/Home": "pages/Home.html",
+  "/Portfolio": "pages/Portfolio.html",
+  "/Resume": "pages/Resume.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}

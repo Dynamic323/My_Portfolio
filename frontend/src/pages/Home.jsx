@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "../components/Navbar";
@@ -107,25 +108,25 @@ function Home() {
       borderColor: "#FF2D20",
     },
     {
-  Name: "FastAPI",
-  icon: (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 512 512"
-      fill="#009688"
-      width="20"
-      height="20"
-    >
-      <circle cx="256" cy="256" r="256" fill="#009688" />
-      <path
-        d="M271.6 110.2 166.9 326.3h67.9l-24.5 75.5 125.8-194.8h-63.8l-0.7-96.8z"
-        fill="#fff"
-      />
-    </svg>
-  ),
-  color: "#009688",
-  borderColor: "#009688",
-},
+      Name: "FastAPI",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          fill="#009688"
+          width="20"
+          height="20"
+        >
+          <circle cx="256" cy="256" r="256" fill="#009688" />
+          <path
+            d="M271.6 110.2 166.9 326.3h67.9l-24.5 75.5 125.8-194.8h-63.8l-0.7-96.8z"
+            fill="#fff"
+          />
+        </svg>
+      ),
+      color: "#009688",
+      borderColor: "#009688",
+    },
 
   ];
 
@@ -246,8 +247,8 @@ function Home() {
                   {(activeSkill === "frontend"
                     ? frontendSkills
                     : activeSkill === "Backend"
-                    ? backendSkills
-                    : devTools
+                      ? backendSkills
+                      : devTools
                   )
                     .slice(0, 4)
                     .map((tech) => (
@@ -272,8 +273,8 @@ function Home() {
                   {(activeSkill === "frontend"
                     ? frontendSkills
                     : activeSkill === "Backend"
-                    ? backendSkills
-                    : devTools
+                      ? backendSkills
+                      : devTools
                   )
                     .slice(4)
                     .map((tech) => (

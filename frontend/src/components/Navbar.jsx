@@ -1,74 +1,58 @@
+"use client";
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const location = useLocation();
+  const pathname = usePathname();
 
+  const navItems = [
+    { name: "About", path: "/", icon: "fa-user" },
+    { name: "Resume", path: "/resume", icon: "fa-file-alt" },
+    { name: "Portfolio", path: "/portfolio", icon: "fa-briefcase" },
+    { name: "Blog", path: "/blog", icon: "fa-blog" },
+    { name: "Contact", path: "/contact", icon: "fa-paper-plane" },
+  ];
 
-  
   return (
-    <nav class="navbar">
+    <nav className="navbar floating-nav">
       <ul className="navbar-list">
-        <li className="navbar-item">
-          <Link to="/">
-            <button
-              className={`navbar-link ${
-                location.pathname === "/" ? "active" : ""
-              }`}
-            >
-              About
-            </button>
-          </Link>
-        </li>
-
-        <li className="navbar-item">
-          <Link to="/resume">
-            <button
-              className={`navbar-link ${
-                location.pathname === "/resume" ? "active" : ""
-              }`}
-            >
-              Resume
-            </button>
-          </Link>
-        </li>
-
-        <li className="navbar-item">
-          <Link to="/portfolio">
-            <button
-              className={`navbar-link ${
-                location.pathname === "/portfolio" ? "active" : ""
-              }`}
-            >
-              Portfolio
-            </button>
-          </Link>
-        </li>
-
-        <li className="navbar-item">
-          <Link to="/blog">
-            <button
-              className={`navbar-link ${
-                location.pathname === "/blog" ? "active" : ""
-              }`}
-            >
-              Blog
-            </button>
-          </Link>
-        </li>
-
-        <li className="navbar-item">
-          <Link to="/contact">
-            <button
-              className={`navbar-link ${
-                location.pathname === "/contact" ? "active" : ""
-              }`}
-            >
-              Contact
-            </button>
-          </Link>
-        </li>
-       
+        {navItems.map((item) => {
+          const isActive = pathname === item.path;
+          return (
+            <li className="navbar-item" key={item.name}>
+              <Link href={item.path} className={`navbar-link ${isActive ? "active" : ""}`}>
+                <motion.div
+                  className="nav-icon-container"
+                  whileTap={{ scale: 0.9 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                  {isActive && (
+                    <>
+                      <motion.div
+                        layoutId="active-pill"
+                        className="active-indicator"
+                        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                      />
+                      <motion.span
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: -35 }}
+                        exit={{ opacity: 0, y: 10 }}
+                        className="active-label"
+                      >
+                        {item.name}
+                      </motion.span>
+                    </>
+                  )}
+                  <span className="icon-wrapper">
+                    <i className={`fas ${item.icon}`}></i>
+                  </span>
+                </motion.div>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

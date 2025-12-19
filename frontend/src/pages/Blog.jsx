@@ -7,7 +7,7 @@ function Blog() {
   const blogPosts = [
     {
       id: 1,
-      image: "./assets/images/blog-1.jpg",
+      image: "/images/blog-1.jpg",
       alt: "Design conferences in 2022",
       category: "Design",
       date: "Feb 23, 2022",
@@ -16,7 +16,7 @@ function Blog() {
     },
     {
       id: 2,
-      image: "./assets/images/blog-2.jpg",
+      image: "/images/blog-2.jpg",
       alt: "Best fonts every designer",
       category: "Design",
       date: "Feb 23, 2022",
@@ -25,7 +25,7 @@ function Blog() {
     },
     {
       id: 3,
-      image: "./assets/images/blog-3.jpg",
+      image: "/images/blog-3.jpg",
       alt: "Design digest #80",
       category: "Design",
       date: "Feb 23, 2022",
@@ -34,7 +34,7 @@ function Blog() {
     },
     {
       id: 4,
-      image: "./assets/images/blog-4.jpg",
+      image: "/images/blog-4.jpg",
       alt: "UI interactions of the week",
       category: "Design",
       date: "Feb 23, 2022",
@@ -43,7 +43,7 @@ function Blog() {
     },
     {
       id: 5,
-      image: "./assets/images/blog-5.jpg",
+      image: "/images/blog-5.jpg",
       alt: "The forgotten art of spacing",
       category: "Design",
       date: "Feb 23, 2022",
@@ -52,7 +52,7 @@ function Blog() {
     },
     {
       id: 6,
-      image: "./assets/images/blog-6.jpg",
+      image: "/images/blog-6.jpg",
       alt: "Design digest #79",
       category: "Design",
       date: "Feb 23, 2022",
@@ -66,30 +66,30 @@ function Blog() {
       <Navbar />
       <Pagebg title="Resume">
 
-      <section className="blog-posts">
-        <ul className="blog-posts-list">
-          {blogPosts.map((post) => (
-            <li key={post.id} className="blog-post-item">
-              <a href="#">
-                <figure className="blog-banner-box">
-                  <img src={post.image} alt={post.alt} loading="lazy" />
-                </figure>
+        <section className="blog-posts">
+          <ul className="blog-posts-list">
+            {blogPosts.map((post) => (
+              <li key={post.id} className="blog-post-item">
+                <a href="#">
+                  <figure className="blog-banner-box">
+                    <img src={post.image} alt={post.alt} loading="lazy" />
+                  </figure>
 
-                <div className="blog-content">
-                  <div className="blog-meta">
-                    <p className="blog-category">{post.category}</p>
-                    <span className="dot"></span>
-                    <time dateTime="2022-02-23">{post.date}</time>
+                  <div className="blog-content">
+                    <div className="blog-meta">
+                      <p className="blog-category">{post.category}</p>
+                      <span className="dot"></span>
+                      <time dateTime="2022-02-23">{post.date}</time>
+                    </div>
+
+                    <h3 className="h3 blog-item-title">{post.title}</h3>
+                    <p className="blog-text">{post.text}</p>
                   </div>
-
-                  <h3 className="h3 blog-item-title">{post.title}</h3>
-                  <p className="blog-text">{post.text}</p>
-                </div>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
 
       </Pagebg>
     </div>

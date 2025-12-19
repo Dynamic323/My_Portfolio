@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef } from "react";
 
 const ParticleBackground = () => {
@@ -16,15 +17,15 @@ const ParticleBackground = () => {
       starMaxRadius: 1.5,          // Maximum star size
       starSpeed: 0.05,             // How fast stars drift down (lower = slower)
       starTwinkleSpeed: 0.03,      // How fast stars twinkle (lower = slower)
-      
+
       // Mouse interaction
       mouseInteractionRadius: 120, // Distance stars react to mouse
       mouseInteractionStrength: 0.02, // How much stars move toward/away from mouse
-      
+
       // Moon settings
       moonRadius: 50,              // Moon size
       moonGlowSpeed: 0.02,         // How fast moon pulses (lower = slower)
-      
+
       // Shooting star settings
       // shootingStarFrequency: 0.995, // Higher = less frequent (0.99 = more, 0.999 = less)
       // shootingStarMinLength: 60,   // Minimum trail length
@@ -32,7 +33,7 @@ const ParticleBackground = () => {
       // shootingStarMinSpeed: 4,     // Minimum speed
       // shootingStarMaxSpeed: 7,     // Maximum speed
       // shootingStarFadeSpeed: 0.008, // How fast they fade (higher = faster fade)
-      
+
       // Performance
       useRequestAnimationFrame: true, // Set to false if experiencing lag
     };
@@ -50,7 +51,7 @@ const ParticleBackground = () => {
 
     // Shooting stars array
     // const shootingStars = [];
-    
+
     // Create shooting star from moon position
     // const createShootingStar = () => {
     //   if (Math.random() > CONFIG.shootingStarFrequency) {
@@ -118,7 +119,7 @@ const ParticleBackground = () => {
       glowGradient.addColorStop(0.3, "rgba(255, 250, 200, 0.4)");
       glowGradient.addColorStop(0.6, "rgba(200, 210, 255, 0.2)");
       glowGradient.addColorStop(1, "rgba(150, 180, 255, 0)");
-      
+
       ctx.fillStyle = glowGradient;
       ctx.beginPath();
       ctx.arc(moon.x, moon.y, moon.radius * 2.5, 0, Math.PI * 2);
@@ -196,7 +197,7 @@ const ParticleBackground = () => {
       // Draw and update shooting stars
       // for (let i = shootingStars.length - 1; i >= 0; i--) {
       //   const s = shootingStars[i];
-        
+
       //   // Calculate tail end position
       //   const tailX = s.x - Math.cos(s.angle) * s.length;
       //   const tailY = s.y - Math.sin(s.angle) * s.length;

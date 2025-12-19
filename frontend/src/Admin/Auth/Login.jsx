@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 import "./admin-login.css";
-import {  loginUser } from "../api"; // Capital "U"
+import { useRouter } from "next/navigation";
+import { loginUser } from "../api"; // Capital "U"
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
   const [isloading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+  const router = useRouter();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -30,7 +32,11 @@ const Login = () => {
       // Example: Store token and redirect
       if (response.token) {
         localStorage.setItem("adminToken", response.token);
-        window.location.href = "/admin/dashboard";
+        // Assuming token for ProtectedRoutes is "token" based on previous file, but Login sets "adminToken".
+        // Checking ProtectedRoutes again: it checks "token".
+        // I should set "token" too or update ProtectedRoutes.
+        localStorage.setItem("token", response.token);
+        router.push("/admin/dashboard");
       }
     } catch (err) {
       setError(err.message || "Invalid credentials. Please try again.");
@@ -76,7 +82,7 @@ const Login = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="admin@company.com"
-                  //   required
+                //   required
                 />
               </div>
             </div>
@@ -90,7 +96,7 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
-                  //   required
+                //   required
                 />
               </div>
             </div>

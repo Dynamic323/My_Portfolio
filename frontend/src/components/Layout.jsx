@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from "react";
 import { images } from "../assets";
 
@@ -48,7 +49,7 @@ function Layout({ children }) {
               </a>
             </button>
           </div>
-  
+
           <button
             className="info_more-btn"
             data-sidebar-btn

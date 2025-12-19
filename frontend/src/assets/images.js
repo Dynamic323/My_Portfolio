@@ -1,78 +1,78 @@
-import profile from "../../public/images/avarta_profile.png";
+const profile = "/images/avarta_profile.png";
 
 //
 // Movieo
-import movie2 from "../../public/images/Movieo/preview2.jpg";
-import movie1 from "../../public/images/Movieo/preview1.jpg";
-import movie3 from "../../public/images/Movieo/preview3.jpg";
-import movie4 from "../../public/images/Movieo/preview4.jpg";
-import movie5 from "../../public/images/Movieo/preview5.jpg";
-import movie6 from "../../public/images/Movieo/preview6.jpg";
-import movie7 from "../../public/images/Movieo/preview7.jpg";
-import movie8 from "../../public/images/Movieo/preview8.jpg";
-// import movie9 from "../../public/images/Movieo/preview19.jpg";
+const movie2 = "/images/Movieo/preview2.jpg";
+const movie1 = "/images/Movieo/preview1.jpg";
+const movie3 = "/images/Movieo/preview3.jpg";
+const movie4 = "/images/Movieo/preview4.jpg";
+const movie5 = "/images/Movieo/preview5.jpg";
+const movie6 = "/images/Movieo/preview6.jpg";
+const movie7 = "/images/Movieo/preview7.jpg";
+const movie8 = "/images/Movieo/preview8.jpg";
+// const movie9 = "/images/Movieo/preview19.jpg";
 
 // Netdownloader
-import net_downloader1 from "../../public/images/netdownloader/netdownloader1.png";
-import net_downloader2 from "../../public/images/netdownloader/netdownloader2.jpg";
+const net_downloader1 = "/images/netdownloader/netdownloader1.png";
+const net_downloader2 = "/images/netdownloader/netdownloader2.jpg";
 
 // Mexant
-import mexant1 from "../../public/images/mexant/mexant1.jpg";
-import mexant2 from "../../public/images/mexant/mexant2.jpg";
-import mexant3 from "../../public/images/mexant/mexant3.jpg";
+const mexant1 = "/images/mexant/mexant1.jpg";
+const mexant2 = "/images/mexant/mexant2.jpg";
+const mexant3 = "/images/mexant/mexant3.jpg";
 
 // Joycaring
-import joycaring1 from "../../public/images/joycaring/joycaring1.jpg";
-import joycaring2 from "../../public/images/joycaring/joycaring2.jpg";
+const joycaring1 = "/images/joycaring/joycaring1.jpg";
+const joycaring2 = "/images/joycaring/joycaring2.jpg";
 
 // Html, css
-import portfoliody from "../../public/images/html_css/portfoliody.png";
-import Glass_effects from "../../public/images/html_css/Glass form effects.png";
+const portfoliody = "/images/html_css/portfoliody.png";
+const Glass_effects = "/images/html_css/Glass form effects.png";
 
 // laravel;
-import laravelblog from "../../public/images/laravel/laravel blog.jpg";
-import myclasslist1 from "../../public/images/laravel/myclasslist1.jpg";
-import myclasslist2 from "../../public/images/laravel/myclasslist2.jpg";
+const laravelblog = "/images/laravel/laravel blog.jpg";
+const myclasslist1 = "/images/laravel/myclasslist1.jpg";
+const myclasslist2 = "/images/laravel/myclasslist2.jpg";
 
 // Sunwave;
-import sunwaveclone1 from "../../public/images/sunwave/sunwavve_clone.png";
-import sunwaveclone2 from "../../public/images/sunwave/sunwaveclone2.png";
-import sunwaveclone3 from "../../public/images/sunwave/sunwaveclone3.png";
+const sunwaveclone1 = "/images/sunwave/sunwavve_clone.png";
+const sunwaveclone2 = "/images/sunwave/sunwaveclone2.png";
+const sunwaveclone3 = "/images/sunwave/sunwaveclone3.png";
 
 // php;
-import crud from "../../public/images/php/crud.jpg";
+const crud = "/images/php/crud.jpg";
 
 // App
 
 // Dyshare
-import dysharex1 from "../../public/images/dyshare/dysharex.jpeg";
-import dysharex2 from "../../public/images/dyshare/dyshare2.jpeg";
-import dysharex3 from "../../public/images/dyshare/dyshare3.jpeg";
+const dysharex1 = "/images/dyshare/dysharex.jpeg";
+const dysharex2 = "/images/dyshare/dyshare2.jpeg";
+const dysharex3 = "/images/dyshare/dyshare3.jpeg";
 
-import instantly from "../../public/images/instantly/instantly.png";
-import opayclone from "../../public/images/app/opay react native.png";
+const instantly = "/images/instantly/instantly.png";
+const opayclone = "/images/app/opay react native.png";
 
-import replico1 from "../../public/images/replico.jpeg";
+const replico1 = "/images/replico.jpeg";
 
-import cocobase1 from "../../public/images/cocobase/cocobase.png";
+const cocobase1 = "/images/cocobase/cocobase.png";
 
-import cocomailer from "../../public/images/coco-mailer/cocomailer.png";
-import cocomailer2 from "../../public/images/coco-mailer/cocomailer2.jpeg";
-import cocomailer3 from "../../public/images/coco-mailer/cocomailer3.jpeg";
+const cocomailer = "/images/coco-mailer/cocomailer.png";
+const cocomailer2 = "/images/coco-mailer/cocomailer2.jpeg";
+const cocomailer3 = "/images/coco-mailer/cocomailer3.jpeg";
 
-import xpay from "../../public/images/xpay/xpay.png";
-import xpay2 from "../../public/images/xpay/xpay2.png";
+const xpay = "/images/xpay/xpay.png";
+const xpay2 = "/images/xpay/xpay2.png";
 
-import seasonalW1 from "../../public/images/seasonalWishes/s1.png";
-import seasonalW2 from "../../public/images/seasonalWishes/s2.png";
+const seasonalW1 = "/images/seasonalWishes/s1.png";
+const seasonalW2 = "/images/seasonalWishes/s2.png";
 
-import emialuge1 from "../../public/images/em_Investment/em1.png";
-import emialuge2 from "../../public/images/em_Investment/em2.png";
-import emialuge3 from "../../public/images/em_Investment/em3.png";
+const emialuge1 = "/images/em_Investment/em1.png";
+const emialuge2 = "/images/em_Investment/em2.png";
+const emialuge3 = "/images/em_Investment/em3.png";
 
-import dp from "../../public/images/dp-removebg-preview.png";
+const dp = "/images/dp-removebg-preview.png";
 
-import dp_test from "../../public/testdp-removebg-preview.png";
+const dp_test = "/testdp-removebg-preview.png";
 
 export default {
   dysharex1,

@@ -1,17 +1,18 @@
-import { Children, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+"use client";
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-const ProtectedRoutes = ({ Children }) => {
-  const naviga = useNavigate();
-  const token = localStorage.getItem("token") || false;
+export const ProtectedRoutesWrapper = ({ children }) => {
+  const router = useRouter();
+  const [authorized, setAuthorized] = useState(false);
 
   useEffect(() => {
-    if (!token) {
-      naviga("/admin"); 
-    }
-  }, [token, naviga]);
+    const token = localStorage.getItem("token");
+    if (!token) router.push("/admin");
+    else setAuthorized(true);
+  }, [router]);
 
-  return token ? Children : null;
-};
+  return authorized ? children : null;
+}
 
-export default ProtectedRoutes;
+export default ProtectedRoutesWrapper;

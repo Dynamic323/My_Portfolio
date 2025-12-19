@@ -37,25 +37,4 @@ export const router = createBrowserRouter([
       },
     ],
   },
-  {
-    path: "admin",
-    children: [
-      {
-        index: true,
-        element: <Login />,
-      },
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "dashboard",
-        element: (
-          <ProtectedRoutes>
-            <Dashboard />
-          </ProtectedRoutes>
-        ),
-      },
-    ],
-  },
 ]);

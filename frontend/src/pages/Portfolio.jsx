@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Pagebg from "../components/Pagebg";
@@ -107,10 +108,10 @@ function Portfolio() {
           {projects.filter(
             (project) => current === "All" || project.category === current
           ).length === 0 && (
-            <p className="no-projects">
-              No projects found for the selected category.
-            </p>
-          )}
+              <p className="no-projects">
+                No projects found for the selected category.
+              </p>
+            )}
         </section>
         {selectedProject && (
           <Modal
