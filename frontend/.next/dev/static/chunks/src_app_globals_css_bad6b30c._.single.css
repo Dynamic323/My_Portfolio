@@ -449,6 +449,10 @@ main {
   box-shadow: 0 10px 30px -10px #00000080;
 }
 
+.desktop-nav-label {
+  display: none;
+}
+
 .navbar-list {
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -2037,6 +2041,56 @@ textarea.form-input::-webkit-resizer {
 
   .navbar-link {
     font-weight: var(--fw-500);
+  }
+
+  .navbar.floating-nav {
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    width: auto !important;
+    min-width: auto !important;
+    max-width: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    border: none !important;
+    border-radius: 0 20px !important;
+    height: auto !important;
+    padding: 0 20px !important;
+    position: absolute !important;
+    inset: 0 0 auto auto !important;
+    transform: none !important;
+  }
+
+  .navbar-list {
+    background: none !important;
+    justify-content: flex-end !important;
+    gap: 30px !important;
+    padding: 0 20px !important;
+  }
+
+  .navbar-link {
+    width: auto !important;
+    height: auto !important;
+    font-weight: var(--fw-500) !important;
+    color: var(--light-gray) !important;
+    border-radius: 0 !important;
+    padding: 20px !important;
+    display: block !important;
+  }
+
+  .navbar-link:hover, .navbar-link.active {
+    color: var(--orange-blue-crayola) !important;
+  }
+
+  .nav-icon-container {
+    display: none !important;
+  }
+
+  .desktop-nav-label {
+    color: inherit;
+    font-size: var(--fs-8);
+    z-index: 10;
+    position: relative;
+    display: block !important;
   }
 
   .service-list {

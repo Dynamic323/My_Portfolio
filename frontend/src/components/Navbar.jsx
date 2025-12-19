@@ -23,6 +23,7 @@ const Navbar = () => {
           return (
             <li className="navbar-item" key={item.name}>
               <Link href={item.path} className={`navbar-link ${isActive ? "active" : ""}`}>
+                <span className="desktop-nav-label">{item.name}</span>
                 <motion.div
                   className="nav-icon-container"
                   whileTap={{ scale: 0.9 }}
