@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receipt - D-Y Coder Web Solutions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #f5f5f5;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .receipt-container {
+        background: white;
+        max-width: 850px;
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      .receipt-header {
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        color: white;
+        padding: 50px 40px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .receipt-header::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -10%;
+        width: 400px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .logo-icon {
+        width: 80px;
+        height: 80px;
+        background: white;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .code-brackets {
+        font-size: 40px;
+        font-weight: bold;
+        color: #1e88e5;
+        font-family: monospace;
+      }
+
+      .company-info {
+        flex: 1;
+      }
+
+      .company-name {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+      }
+
+      .company-tagline {
+        font-size: 15px;
+        opacity: 0.95;
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .receipt-title {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        letter-spacing: 4px;
+      }
+
+      .receipt-body {
+        padding: 45px;
+      }
+
+      .receipt-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #e8f4fd;
+      }
+
+      .info-section h3 {
+        font-size: 13px;
+        color: #1e88e5;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 15px;
+        font-weight: 700;
+      }
+
+      .info-section p {
+        color: #424242;
+        line-height: 1.9;
+        font-size: 15px;
+      }
+
+      .info-section strong {
+        color: #1a237e;
+        font-weight: 600;
+      }
+
+      .services-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+        border: 1px solid #e8f4fd;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      .services-table thead {
+        background: #1e88e5;
+        color: white;
+      }
+
+      .services-table th {
+        padding: 16px 20px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .services-table td {
+        padding: 20px;
+        border-bottom: 1px solid #e8f4fd;
+        color: #424242;
+        font-size: 15px;
+      }
+
+      .services-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .services-table tbody tr:hover {
+        background: #f8fbff;
+      }
+
+      .service-name {
+        font-weight: 600;
+        color: #1a237e;
+        margin-bottom: 8px;
+      }
+
+      .service-description {
+        color: #666;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+
+      .free-badge {
+        background: linear-gradient(135deg, #00c853 0%, #00e676 100%);
+        color: white;
+        padding: 5px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-left: 10px;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(0, 200, 83, 0.3);
+      }
+
+      .payment-history {
+        background: #f8fbff;
+        border: 2px solid #e8f4fd;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 25px;
+      }
+
+      .payment-history h3 {
+        color: #1e88e5;
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .payment-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background: white;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        border-left: 4px solid #1e88e5;
+      }
+
+      .payment-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .payment-details {
+        flex: 1;
+      }
+
+      .payment-date {
+        font-weight: 600;
+        color: #1a237e;
+        margin-bottom: 4px;
+      }
+
+      .payment-method {
+        font-size: 13px;
+        color: #666;
+      }
+
+      .payment-amount {
+        font-size: 20px;
+        font-weight: 700;
+        color: #1e88e5;
+      }
+
+      .totals-section {
+        background: #f8fbff;
+        padding: 30px;
+        border-radius: 12px;
+        border: 2px solid #e8f4fd;
+      }
+
+      .total-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+      }
+
+      .total-row.grand-total {
+        border-top: 3px solid #1e88e5;
+        margin-top: 15px;
+        padding-top: 20px;
+      }
+
+      .total-label {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .total-row.grand-total .total-label {
+        font-size: 20px;
+        color: #1a237e;
+        font-weight: 700;
+      }
+
+      .total-amount {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1e88e5;
+      }
+
+      .total-row.grand-total .total-amount {
+        font-size: 36px;
+        color: #1e88e5;
+        font-weight: 800;
+      }
+
+      .payment-status {
+        text-align: center;
+        margin-top: 30px;
+        padding: 25px;
+        background: linear-gradient(135deg, #00c853 0%, #00e676 100%);
+        border-radius: 12px;
+        color: white;
+        box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+      }
+
+      .payment-status h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+
+      .payment-status p {
+        font-size: 15px;
+        opacity: 0.95;
+      }
+
+      .notes-section {
+        margin-top: 30px;
+        padding: 25px;
+        background: #fff9e6;
+        border-left: 5px solid #ffc107;
+        border-radius: 8px;
+      }
+
+      .notes-section h3 {
+        color: #f57c00;
+        font-size: 16px;
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      .notes-section p {
+        color: #666;
+        line-height: 1.8;
+        font-size: 14px;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 35px;
+        background: #1a237e;
+        color: white;
+        font-size: 14px;
+      }
+
+      .footer strong {
+        font-size: 16px;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .footer a {
+        color: #42a5f5;
+        text-decoration: none;
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+
+        .receipt-container {
+          box-shadow: none;
+        }
+
+        .print-button {
+          display: none;
+        }
+
+        @page {
+          margin: 0.5cm;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .receipt-info {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .services-table {
+          font-size: 13px;
+        }
+
+        .services-table th,
+        .services-table td {
+          padding: 12px;
+        }
+
+        .logo-section {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .company-name {
+          font-size: 24px;
+        }
+
+        .receipt-body {
+          padding: 25px;
+        }
+
+        .payment-item {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+        }
+      }
+
+      .print-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        color: white;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 8px 25px rgba(30, 136, 229, 0.4);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .print-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(30, 136, 229, 0.5);
+      }
+
+      .print-button:active {
+        transform: translateY(-1px);
+      }
+
+      .download-button {
+        position: fixed;
+        bottom: 30px;
+        right: 180px;
+        background: linear-gradient(135deg, #00c853 0%, #00e676 100%);
+        color: white;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 8px 25px rgba(0, 200, 83, 0.4);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .download-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 35px rgba(0, 200, 83, 0.5);
+      }
+
+      .download-button:active {
+        transform: translateY(-1px);
+      }
+
+      @media (max-width: 768px) {
+        .download-button {
+          bottom: 90px;
+          right: 30px;
+        }
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  </head>
+  <body>
+    <div class="receipt-container">
+      <div class="receipt-header">
+        <div class="logo-section">
+          <div class="logo-icon">
+            <img src="./dy_logo.jpeg" alt="" width="100%" />
+          </div>
+          <div class="company-info">
+            <div class="company-name">D-Y Coder</div>
+            <div class="company-tagline">Web Solutions</div>
+          </div>
+        </div>
+        <div class="receipt-title">RECEIPT</div>
+      </div>
+
+      <div class="receipt-body">
+        <div class="receipt-info">
+          <div class="info-section">
+            <h3>Bill To</h3>
+            <p>
+              <strong>Africa Well</strong><br />
+              Non-Profit Organization<br />
+              Healthcare & Education Initiative<br />
+              Pan-African Operations
+            </p>
+          </div>
+
+          <div class="info-section">
+            <h3>Receipt Details</h3>
+            <p>
+              <strong>Receipt No:</strong> DYC-2025-001<br />
+              <strong>Issue Date:</strong> December 3, 2025<br />
+              <strong>Project:</strong> NGO Website Development<br />
+              <strong>Status:</strong>
+              <span style="color: #00c853; font-weight: 600">Paid in Full</span>
+            </p>
+          </div>
+        </div>
+
+        <table class="services-table">
+          <thead>
+            <tr>
+              <th>Service Description</th>
+              <th style="text-align: center; width: 80px">Qty</th>
+              <th style="text-align: right; width: 120px">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="service-name">
+                  Professional NGO Website Development
+                </div>
+                <div class="service-description">
+                  Complete Next.js website with TypeScript and Tailwind CSS
+                  featuring 7 responsive pages (Home, About, Projects, Donate,
+                  Store, Team, Contact)
+                  <ul>
+                    <li>Dynamic hero carousel with auto-play</li>
+                    <li>Stripe and Paypal payment integration</li>
+                    <li>E-commerce store with shopping cart</li>
+                    <li>Interactive contact form</li>
+                    <li>Google Maps integration</li>
+                    <li>Mobile-responsive design</li>
+                    <li>Modern animations and transitions</li>
+                    <li>SEO-ready structure</li>
+                  </ul>
+                </div>
+              </td>
+              <td style="text-align: center">1</td>
+              <td style="text-align: right; font-weight: 700; color: #1a237e">
+                $400.00
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="service-name">
+                  Complete SEO Optimization
+                  <span class="free-badge">Complimentary</span>
+                </div>
+                <div class="service-description">
+                  Full search engine optimization package • Meta tags and
+                  descriptions • Structured data markup • Performance
+                  optimization • Mobile-first optimization • SEO-friendly URLs •
+                  Content structure optimization • Image optimization • Social
+                  media integration
+                </div>
+              </td>
+              <td style="text-align: center">1</td>
+              <td style="text-align: right; font-weight: 700; color: #00c853">
+                $0.00
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="payment-history">
+          <h3>💳 Payment History</h3>
+          <div class="payment-item">
+            <div class="payment-details">
+              <div class="payment-date">First Installment</div>
+              <div class="payment-method">
+                Bank Transfer • Received November 2025
+              </div>
+            </div>
+            <div class="payment-amount">$200.00</div>
+          </div>
+          <div class="payment-item">
+            <div class="payment-details">
+              <div class="payment-date">Final Payment</div>
+              <div class="payment-method">
+                Bank Transfer • Received December 3, 2025
+              </div>
+            </div>
+            <div class="payment-amount">$200.00</div>
+          </div>
+        </div>
+
+        <div class="totals-section">
+          <div class="total-row">
+            <span class="total-label">Website Development</span>
+            <span class="total-amount">$400.00</span>
+          </div>
+          <div class="total-row">
+            <span class="total-label">SEO Services (Bonus Value)</span>
+            <span class="total-amount" style="color: #00c853">$150.00</span>
+          </div>
+          <div class="total-row">
+            <span class="total-label">Amount Charged</span>
+            <span class="total-amount">$400.00</span>
+          </div>
+          <div class="total-row grand-total">
+            <span class="total-label">TOTAL PAID</span>
+            <span class="total-amount">$400.00</span>
+          </div>
+        </div>
+
+        <div class="payment-status">
+          <h3>✓ PAYMENT COMPLETED</h3>
+          <p>All installments received • Project delivered successfully</p>
+        </div>
+
+        <!-- <div class="notes-section">
+          <h3>📌 Project Summary</h3>
+          <p>
+            This receipt confirms full payment for the Africa Well NGO website
+            project. The deliverable includes a modern, fully responsive website
+            built with Next.js, TypeScript, and Tailwind CSS, featuring all
+            requested pages and functionalities. As a valued client, we've
+            included complete SEO optimization (valued at $150) at no additional
+            charge to help maximize your online reach and impact. The website is
+            now live and ready to help Africa Well achieve its mission of
+            transforming healthcare and education across Africa.
+          </p>
+        </div> -->
+      </div>
+
+      <div class="footer">
+        <strong>Thank you for choosing D-Y Coder Web Solutions!</strong>
+        For support or inquiries, contact us at:
+        <a href="mailto:dycoderwebsolutions@gmail.com"
+          >dycoderwebsolutions@gmail.com</a
+        ><br />
+        <br />
+        <em
+          >This is a computer-generated receipt and is valid without
+          signature.</em
+        >
+      </div>
+    </div>
+
+    <button class="download-button" onclick="downloadReceipt()">
+      <span>⬇️</span>
+      <span>Download PDF</span>
+    </button>
+
+    <button class="print-button" onclick="window.print()">
+      <span>🖨️</span>
+      <span>Print Receipt</span>
+    </button>
+
+    <script>
+      async function downloadReceipt() {
+        const button = document.querySelector(".download-button");
+        const printBtn = document.querySelector(".print-button");
+        const originalText = button.innerHTML;
+
+        // Hide buttons before capture
+        button.style.display = "none";
+        printBtn.style.display = "none";
+
+        // Show loading state
+        button.innerHTML = "<span>⏳</span><span>Generating...</span>";
+
+        try {
+          const receiptElement = document.querySelector(".receipt-container");
+
+          // Use html2canvas to capture the receipt
+          const canvas = await html2canvas(receiptElement, {
+            scale: 2,
+            useCORS: true,
+            logging: false,
+            backgroundColor: "#ffffff",
+          });
+
+          // Convert to blob and download
+          canvas.toBlob(function (blob) {
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = "Africa_Well_Receipt_DYC-2025-001.png";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+
+            // Restore buttons
+            button.style.display = "flex";
+            printBtn.style.display = "flex";
+            button.innerHTML = originalText;
+          });
+        } catch (error) {
+          console.error("Download failed:", error);
+          alert("Download failed. Please try printing instead.");
+          button.style.display = "flex";
+          printBtn.style.display = "flex";
+          button.innerHTML = originalText;
+        }
+      }
+    </script>
+  </body>
+</html>
