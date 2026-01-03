@@ -73,8 +73,8 @@ function Layout({ children }) {
             </div>
             <div className="contact-info">
               <p className="contact-title">Email</p>
-              <a href="mailto:dycoderx70@gmail.com" className="contact-link">
-                dycoderx70@gmail.com
+              <a href="mailto:otamereisrael8@gmail.com" className="contact-link">
+                otamereisrael8@gmail.com
               </a>
             </div>
           </li>

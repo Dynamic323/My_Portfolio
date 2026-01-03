@@ -127,7 +127,6 @@ function Home() {
       color: "#009688",
       borderColor: "#009688",
     },
-
   ];
 
   const devTools = [
@@ -211,12 +210,12 @@ function Home() {
             Hello ! <span className="glow_hi">👋 ,</span>
           </p>
           <p>
-            I’m Israel, a full-stack developer who transforms ideas into fast,
-            reliable, and visually engaging web and mobile experiences. With 3+
-            years of experience using React.js, Flutter, FastAPI, Express,
-            Laravel, and more, I focus on delivering solutions that perform
-            smoothly and help your business stand out online. Let’s build
-            something exceptional together.
+            I'm Israel Otamere (DyCoder), a full-stack web developer
+            specializing in JavaScript, React, Next.js, Node.js, and scalable
+            web applications. Co-founder of CocoBase (BaaS), I build
+            high-performance products for startups, businesses, and founders in
+            Nigeria and internationally. Available for freelance and contract
+            work.
           </p>
         </section>
 
@@ -247,8 +246,8 @@ function Home() {
                   {(activeSkill === "frontend"
                     ? frontendSkills
                     : activeSkill === "Backend"
-                      ? backendSkills
-                      : devTools
+                    ? backendSkills
+                    : devTools
                   )
                     .slice(0, 4)
                     .map((tech) => (
@@ -273,8 +272,8 @@ function Home() {
                   {(activeSkill === "frontend"
                     ? frontendSkills
                     : activeSkill === "Backend"
-                      ? backendSkills
-                      : devTools
+                    ? backendSkills
+                    : devTools
                   )
                     .slice(4)
                     .map((tech) => (
