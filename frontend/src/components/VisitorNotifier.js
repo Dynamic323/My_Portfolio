@@ -1,20 +1,18 @@
+"use client";
+import { UAParser } from "ua-parser-js";
 import { useEffect } from "react";
-import UAParser from "ua-parser-js";
 
 export default function VisitorNotifier() {
   useEffect(() => {
     const collectVisitorInfo = async () => {
       try {
-        // Get IP
         const ipRes = await fetch("https://api.ipify.org?format=json");
         const { ip } = await ipRes.json();
 
-        // Get location
         const locRes = await fetch(`https://ipwho.is/${ip}`);
         const { city, region: regionName, country } = await locRes.json();
         const location = `${city}, ${regionName}, ${country}`;
 
-        // Get device info
         const parser = new UAParser();
         const { browser, os, device } = parser.getResult();
         const deviceName =
@@ -22,7 +20,6 @@ export default function VisitorNotifier() {
             ? `${device.vendor} ${device.model}`
             : `${browser.name} (${os.name})`;
 
-        // Build Telegram message
         const text = `
 🚨 *New Visitor*
 ━━━━━━━━━━━━━━━
@@ -34,7 +31,6 @@ export default function VisitorNotifier() {
 ━━━━━━━━━━━━━━━
         `;
 
-       
         await fetch("/api/telegram", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -48,5 +44,5 @@ export default function VisitorNotifier() {
     collectVisitorInfo();
   }, []);
 
-  return null; // nothing renders
+  return null;
 }
