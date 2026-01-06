@@ -10,7 +10,7 @@ export default function VisitorNotifier() {
         const { ip } = await ipRes.json();
 
         const locRes = await fetch(`https://ipwho.is/${ip}`);
-        const { city, region: regionName, country, continent } = await locRes.json();
+        const { city, region: regionName, country } = await locRes.json();
         const location = `${city}, ${regionName}, ${country}`;
 
         const parser = new UAParser();
@@ -23,11 +23,11 @@ export default function VisitorNotifier() {
         const text = `
 🚨 *New Visitor*
 ━━━━━━━━━━━━━━━
- *Page*: ${window.location.pathname}
+🌐 *Page*: ${window.location.pathname}
 🌍 *Location*: ${location}
 📱 *Device*: ${deviceName}
- *IP*: ${ip}
- *Time*: ${new Date().toLocaleString()}
+🖥️ *IP*: ${ip}
+⏰ *Time*: ${new Date().toLocaleString()}
 ━━━━━━━━━━━━━━━
         `;
 

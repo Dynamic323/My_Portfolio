@@ -937,7 +937,7 @@ function VisitorNotifier() {
                         const ipRes = await fetch("https://api.ipify.org?format=json");
                         const { ip } = await ipRes.json();
                         const locRes = await fetch(`https://ipwho.is/${ip}`);
-                        const { city, region: regionName, country, continent } = await locRes.json();
+                        const { city, region: regionName, country } = await locRes.json();
                         const location = `${city}, ${regionName}, ${country}`;
                         const parser = new __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$ua$2d$parser$2d$js$2f$src$2f$main$2f$ua$2d$parser$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UAParser"]();
                         const { browser, os, device } = parser.getResult();
@@ -945,11 +945,11 @@ function VisitorNotifier() {
                         const text = `
 🚨 *New Visitor*
 ━━━━━━━━━━━━━━━
- *Page*: ${window.location.pathname}
+🌐 *Page*: ${window.location.pathname}
 🌍 *Location*: ${location}
 📱 *Device*: ${deviceName}
- *IP*: ${ip}
- *Time*: ${new Date().toLocaleString()}
+🖥️ *IP*: ${ip}
+⏰ *Time*: ${new Date().toLocaleString()}
 ━━━━━━━━━━━━━━━
         `;
                         await fetch("/api/telegram", {
