@@ -210,12 +210,15 @@ function Home() {
             Hello ! <span className="glow_hi">👋 ,</span>
           </p>
           <p>
-            I'm Israel Otamere (DyCoder), a full-stack web developer
-            specializing in JavaScript, React, Next.js, Node.js, and scalable
-            web applications. Co-founder of CocoBase (BaaS), I build
-            high-performance products for startups, businesses, and founders in
-            Nigeria and internationally. Available for freelance and contract
-            work.
+            I’m Israel Otamere (<strong>DyCoder</strong>) a full-stack web
+            developer focused on building
+            <strong>premium UI only</strong> and scalable, production ready web
+            applications. I specialize in JavaScript, React,
+            Next.js,TypeScript,Php, Laravel and Node.js, crafting high-performance
+            products for startups, businesses, and founders in Nigeria and
+            internationally. As a co-founder of CocoBase (Backend-as-a-Service),
+            I work at the intersection of clean systems, performance, and
+            real-world impact. I’m available for freelance and contract work.
           </p>
         </section>
 
