@@ -3,6 +3,7 @@ import "./App.css";
 import ParticleBackground from "../ParticleBackground";
 import Layout from "../components/Layout";
 import Script from "next/script";
+import VisitorNotifier from "../components/VisitorNotifier";
 
 export const metadata = {
   title: "Israel Otamere (Dy Coder)",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <VisitorNotifier />
         <ParticleBackground />
         <Layout>{children}</Layout>
         <Script
