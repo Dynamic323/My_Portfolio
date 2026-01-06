@@ -23,11 +23,11 @@ export default function VisitorNotifier() {
         const text = `
 🚨 *New Visitor*
 ━━━━━━━━━━━━━━━
-🌐 *Page*: ${window.location.pathname}
+ *Page*: ${window.location.pathname}
 🌍 *Location*: ${location}
 📱 *Device*: ${deviceName}
-🖥️ *IP*: ${ip}
-⏰ *Time*: ${new Date().toLocaleString()}
+ *IP*: ${ip}
+ *Time*: ${new Date().toLocaleString()}
 ━━━━━━━━━━━━━━━
         `;
 
