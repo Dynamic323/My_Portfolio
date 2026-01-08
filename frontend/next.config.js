@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    transpilePackages: ['coco-alert'],
     reactStrictMode: true,
     eslint: {
         // Warning: This allows production builds to successfully complete even if

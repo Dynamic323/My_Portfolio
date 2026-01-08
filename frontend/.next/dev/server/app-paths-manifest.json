@@ -1,7 +1,1 @@
-{
-  "/_not-found/page": "app/_not-found/page.js",
-  "/admin/dashboard/page": "app/admin/dashboard/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/api/telegram/route": "app/api/telegram/route.js",
-  "/page": "app/page.js"
-}
+{}

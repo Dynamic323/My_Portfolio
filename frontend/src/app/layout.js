@@ -4,6 +4,7 @@ import ParticleBackground from "../ParticleBackground";
 import Layout from "../components/Layout";
 import Script from "next/script";
 import VisitorNotifier from "../components/VisitorNotifier";
+import { AlertContainer, coco_Alert } from 'coco-alert/react';
 
 export const metadata = {
   title: "Israel Otamere (Dy Coder)",
@@ -31,6 +32,8 @@ export default function RootLayout({ children }) {
       <body>
         <VisitorNotifier />
         <ParticleBackground />
+      <AlertContainer />
+
         <Layout>{children}</Layout>
         <Script
           type="module"

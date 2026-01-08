@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import "./admin-login.css";
 import { useRouter } from "next/navigation";
 import { loginUser } from "../api"; // Capital "U"
-import { useAuth } from "../context/auth";
+import { Admincontext, useAuth } from "../context/auth";
 const Login = () => {
-  const {loading}  = useAuth();
+  // const stuff = () => useContext(Admincontext);
+  const { loading } = useAuth();
   console.log(loading);
 
   const [email, setEmail] = useState("");
@@ -118,7 +119,7 @@ const Login = () => {
               </a>
             </div>
             <button type="submit" className="login-button">
-              {isloading ? (
+              {loading ? (
                 <>
                   <span className="spinner"></span>
                   Logging in...

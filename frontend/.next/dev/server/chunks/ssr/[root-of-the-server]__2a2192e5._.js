@@ -45,24 +45,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$Admin$2f$
 ;
 __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$Admin$2f$Auth$2f$Login$2e$jsx__$5b$app$2d$rsc$5d$__$28$client__reference__proxy$29$__);
 }),
-"[project]/frontend/src/app/admin/page.js [app-rsc] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
+"[project]/frontend/src/app/admin/page.js [app-rsc] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-__turbopack_context__.s([
-    "default",
-    ()=>Page
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$Admin$2f$Auth$2f$Login$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/Admin/Auth/Login.jsx [app-rsc] (ecmascript)");
-;
-;
-function Page() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$Admin$2f$Auth$2f$Login$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
-        fileName: "[project]/frontend/src/app/admin/page.js",
-        lineNumber: 5,
-        columnNumber: 12
-    }, this);
-}
+const e = new Error("Could not parse module '[project]/frontend/src/app/admin/page.js'\n\nUnexpected token `;`. Expected jsx identifier");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
 }),
 "[project]/frontend/src/app/admin/page.js [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
 
