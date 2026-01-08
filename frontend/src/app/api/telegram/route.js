@@ -11,7 +11,6 @@ export async function POST(request) {
         { status: 400 }
       );
     }
-
     const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
     const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
@@ -19,7 +18,7 @@ export async function POST(request) {
       return NextResponse.json(
         { ok: false, message: "Missing environment variables" },
         { status: 500 }
-      );
+      ); 
     }
 
     const response = await fetch(

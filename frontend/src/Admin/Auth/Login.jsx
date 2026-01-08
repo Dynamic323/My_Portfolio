@@ -4,7 +4,11 @@ import { useState } from "react";
 import "./admin-login.css";
 import { useRouter } from "next/navigation";
 import { loginUser } from "../api"; // Capital "U"
+import { useAuth } from "../context/auth";
 const Login = () => {
+  const {loading}  = useAuth();
+  console.log(loading);
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
@@ -24,20 +28,19 @@ const Login = () => {
     setError("");
 
     try {
-      const credentials = { email, password, rememberMe };
-      const response = await loginUser(credentials);
-      // Handle successful login (store token, redirect, etc.)
-      console.log("Login successful:", response);
-
-      // Example: Store token and redirect
-      if (response.token) {
-        localStorage.setItem("adminToken", response.token);
-        // Assuming token for ProtectedRoutes is "token" based on previous file, but Login sets "adminToken".
-        // Checking ProtectedRoutes again: it checks "token".
-        // I should set "token" too or update ProtectedRoutes.
-        localStorage.setItem("token", response.token);
-        router.push("/admin/dashboard");
-      }
+      // const credentials = { email, password, rememberMe };
+      // const response = await loginUser(credentials);
+      // // Handle successful login (store token, redirect, etc.)
+      // console.log("Login successful:", response);
+      // // Example: Store token and redirect
+      // if (response.token) {
+      //   localStorage.setItem("adminToken", response.token);
+      //   // Assuming token for ProtectedRoutes is "token" based on previous file, but Login sets "adminToken".
+      //   // Checking ProtectedRoutes again: it checks "token".
+      //   // I should set "token" too or update ProtectedRoutes.
+      //   localStorage.setItem("token", response.token);
+      //   router.push("/admin/dashboard");
+      // }
     } catch (err) {
       setError(err.message || "Invalid credentials. Please try again.");
     } finally {
@@ -82,7 +85,7 @@ const Login = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="admin@company.com"
-                //   required
+                  //   required
                 />
               </div>
             </div>
@@ -96,7 +99,7 @@ const Login = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
-                //   required
+                  //   required
                 />
               </div>
             </div>
