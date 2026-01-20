@@ -2,6 +2,10 @@ export default async function sitemap() {
   const baseUrl = "https://dycoder.space";
 
   // Fetch all your blog posts
+
+  const getAllPosts = () => {
+    return ["post1"];
+  };
   const posts = await getAllPosts();
 
   const blogPosts = posts.map((post) => ({
