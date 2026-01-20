@@ -36,7 +36,7 @@ function Layout({ children }) {
           <figure className="avatar-box">
             {/* <img src={images.dp} alt="Richard Hanrick" width="80" /> */}
             <Image
-              src="/israel-otamere-profile.jpg"
+              src="/images/israel-otamere-profile.jpg"
               alt="Israel Otamere (DyCoder) - Full-Stack Software Engineer coding React application"
               width={1200}
               height={800}
