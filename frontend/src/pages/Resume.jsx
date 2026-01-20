@@ -24,7 +24,7 @@ function Resume() {
               <span>2025 — Present</span>
               <p className="timeline-text">
                 Bachelor of Science (in progress). Currently pursuing a degree
-                in Computer Science.
+                in Software Engineering.
               </p>
             </li>
 
@@ -63,21 +63,24 @@ function Resume() {
             {/* CocoBase */}
             <li className="timeline-item">
               <h4 className="h4 timeline-item-title flex">
-                Frontend Engineer —{" "}
+                Full-Stack Developer —{" "}
                 <a
-                  href="https://cocobaselanding.pxxl.click/"
+                  href="https://www.africawell.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="h4 link"
                 >
-                  CocoBase
+                  AfricaWell
                 </a>
               </h4>
-              <span>Aug 2025 — Present</span>
+              <span>Dec 2025 — Present</span>
               <p className="timeline-text">
-                Connecting front-end to back-end, building stunning visuals, and
-                shaping the UI/UX direction of the Backend-as-a-Service (BaaS)
-                platform.
+                Built and launched the AfricaWell platform for a client, a nonprofit website
+                focused on improving healthcare across African communities.
+                Designed and implemented both frontend and backend features,
+                including user engagement systems, donation integrations, and
+                content management tools to support medical missions,
+                scholarships, and community outreach initiatives.
               </p>
             </li>
 

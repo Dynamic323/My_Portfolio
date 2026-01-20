@@ -54,13 +54,80 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$pages$2f$Home$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/src/pages/Home.jsx [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/frontend/node_modules/next/script.js [app-rsc] (ecmascript)");
+;
 ;
 ;
 function Page() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$pages$2f$Home$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        name: "Israel Otamere",
+        alternateName: [
+            "DyCoder",
+            "DyCoderx"
+        ],
+        url: "https://dycoder.space",
+        image: "https://dycoder.space/israel-otamere-profile.jpg",
+        sameAs: [
+            "https://github.com/Dynamic323",
+            "https://www.linkedin.com/in/israel-otamere-304590294",
+            "https://x.com/dy_coder_",
+            "https://clutch.co/profile/dycoder-israel-otamere",
+            "https://dev.to/dycoder",
+            "https://medium.com/@israelotamere"
+        ],
+        jobTitle: "Software Engineer & Full-Stack Developer",
+        worksFor: {
+            "@type": "Organization",
+            name: "CocoBase"
+        },
+        address: {
+            "@type": "PostalAddress",
+            addressLocality: "Benin City",
+            addressRegion: "Edo State",
+            addressCountry: "Nigeria"
+        },
+        alumniOf: {
+            "@type": "Organization",
+            name: "University of Benin"
+        },
+        knowsAbout: [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Next.js",
+            "Node.js",
+            "PHP",
+            "Laravel",
+            "Full-Stack Development",
+            "Web Development",
+            "Embedded Systems"
+        ]
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$script$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                id: "json-ld",
+                type: "application/ld+json",
+                dangerouslySetInnerHTML: {
+                    __html: JSON.stringify(jsonLd)
+                }
+            }, void 0, false, {
+                fileName: "[project]/frontend/src/app/page.js",
+                lineNumber: 51,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$src$2f$pages$2f$Home$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/frontend/src/app/page.js",
+                lineNumber: 56,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/frontend/src/app/page.js",
-        lineNumber: 4,
-        columnNumber: 12
+        lineNumber: 50,
+        columnNumber: 5
     }, this);
 }
 }),

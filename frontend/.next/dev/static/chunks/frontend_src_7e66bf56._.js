@@ -637,26 +637,8 @@ function Home() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: [
-                                    "I’m Israel Otamere (",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "DyCoder"
-                                    }, void 0, false, {
-                                        fileName: "[project]/frontend/src/pages/Home.jsx",
-                                        lineNumber: 213,
-                                        columnNumber: 33
-                                    }, this),
-                                    ") a full-stack web developer focused on building",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: " premium UI only"
-                                    }, void 0, false, {
-                                        fileName: "[project]/frontend/src/pages/Home.jsx",
-                                        lineNumber: 215,
-                                        columnNumber: 13
-                                    }, this),
-                                    " and scalable, production ready web applications. I specialize in JavaScript, React, Next.js, TypeScript, Php, Laravel and Node.js, crafting high-performance products for startups, businesses, and founders in Nigeria and internationally. As a co-founder of CocoBase (Backend-as-a-Service), I work at the intersection of clean systems, performance, and real-world impact. I’m available for freelance and contract work."
-                                ]
-                            }, void 0, true, {
+                                children: "I’m Israel Otamere (DyCoder), a Software Engineer and Full-Stack Developer focused on building premium UI only and scalable, production-ready systems. I specialize in JavaScript, TypeScript, React, Next.js, Node.js, PHP, Laravel, and I’m exploring embedded systems and robotics, expanding my expertise beyond the web. As co-founder of CocoBase (BaaS), I design and implement high-performance software solutions for startups, businesses, and founders in Nigeria and internationally. I’m available for freelance, contract, and startup collaborations, helping clients deliver premium web solutions and scalable software architectures."
+                            }, void 0, false, {
                                 fileName: "[project]/frontend/src/pages/Home.jsx",
                                 lineNumber: 212,
                                 columnNumber: 11
@@ -675,7 +657,7 @@ function Home() {
                                 children: "My Skills"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                lineNumber: 226,
+                                lineNumber: 227,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -686,12 +668,12 @@ function Home() {
                                         children: skill
                                     }, skill, false, {
                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                        lineNumber: 229,
+                                        lineNumber: 230,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                lineNumber: 227,
+                                lineNumber: 228,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -731,18 +713,18 @@ function Home() {
                                                                 children: tech.Name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                                lineNumber: 270,
+                                                                lineNumber: 271,
                                                                 columnNumber: 37
                                                             }, this)
                                                         ]
                                                     }, tech.Name, true, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 257,
+                                                        lineNumber: 258,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                lineNumber: 248,
+                                                lineNumber: 249,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -762,40 +744,40 @@ function Home() {
                                                                 children: tech.Name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                                lineNumber: 296,
+                                                                lineNumber: 297,
                                                                 columnNumber: 37
                                                             }, this)
                                                         ]
                                                     }, tech.Name, true, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 283,
+                                                        lineNumber: 284,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                lineNumber: 274,
+                                                lineNumber: 275,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, activeSkill, true, {
                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                        lineNumber: 240,
+                                        lineNumber: 241,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/src/pages/Home.jsx",
-                                    lineNumber: 239,
+                                    lineNumber: 240,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                lineNumber: 238,
+                                lineNumber: 239,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                        lineNumber: 225,
+                        lineNumber: 226,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -807,47 +789,42 @@ function Home() {
                                 children: "Skills Overview"
                             }, void 0, false, {
                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                lineNumber: 307,
+                                lineNumber: 308,
                                 columnNumber: 11
                             }, this),
                             " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                 className: "skills-list content-card",
                                 children: [
-                                    " ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                         className: "skills-item",
                                         children: [
-                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "title-wrapper",
                                                 children: [
-                                                    " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
                                                         className: "h5",
                                                         children: "Front End"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 314,
+                                                        lineNumber: 312,
                                                         columnNumber: 17
                                                     }, this),
                                                     " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("data", {
-                                                        value: "80",
+                                                        value: "90",
                                                         children: "90%"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 314,
-                                                        columnNumber: 51
-                                                    }, this),
-                                                    " "
+                                                        lineNumber: 313,
+                                                        columnNumber: 17
+                                                    }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                lineNumber: 312,
+                                                lineNumber: 311,
                                                 columnNumber: 15
                                             }, this),
-                                            " ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "skill-progress-bg",
                                                 children: [
@@ -859,14 +836,14 @@ function Home() {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 318,
+                                                        lineNumber: 317,
                                                         columnNumber: 17
                                                     }, this),
                                                     " "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                lineNumber: 316,
+                                                lineNumber: 315,
                                                 columnNumber: 15
                                             }, this),
                                             " "
@@ -890,7 +867,7 @@ function Home() {
                                                         children: "Back end"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 328,
+                                                        lineNumber: 327,
                                                         columnNumber: 17
                                                     }, this),
                                                     " ",
@@ -900,13 +877,13 @@ function Home() {
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
                                                         lineNumber: 328,
-                                                        columnNumber: 50
+                                                        columnNumber: 17
                                                     }, this),
                                                     " "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                lineNumber: 326,
+                                                lineNumber: 325,
                                                 columnNumber: 15
                                             }, this),
                                             " ",
@@ -935,7 +912,7 @@ function Home() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                        lineNumber: 324,
+                                        lineNumber: 323,
                                         columnNumber: 13
                                     }, this),
                                     " ",
@@ -957,12 +934,12 @@ function Home() {
                                                     }, this),
                                                     " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("data", {
-                                                        value: "60",
-                                                        children: "65%"
+                                                        value: "80",
+                                                        children: "80%"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 342,
-                                                        columnNumber: 52
+                                                        lineNumber: 343,
+                                                        columnNumber: 17
                                                     }, this),
                                                     " "
                                                 ]
@@ -979,18 +956,18 @@ function Home() {
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         className: "skill-progress-fill",
                                                         style: {
-                                                            width: "65%"
+                                                            width: "80%"
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 346,
+                                                        lineNumber: 347,
                                                         columnNumber: 17
                                                     }, this),
                                                     " "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                lineNumber: 344,
+                                                lineNumber: 345,
                                                 columnNumber: 15
                                             }, this),
                                             " "
@@ -1011,10 +988,72 @@ function Home() {
                                                     " ",
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
                                                         className: "h5",
-                                                        children: "WordPress"
+                                                        children: " BaaS / Databases "
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 356,
+                                                        lineNumber: 357,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    " ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("data", {
+                                                        value: "50",
+                                                        children: "90%"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/frontend/src/pages/Home.jsx",
+                                                        lineNumber: 358,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    " "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/frontend/src/pages/Home.jsx",
+                                                lineNumber: 355,
+                                                columnNumber: 15
+                                            }, this),
+                                            " ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "skill-progress-bg",
+                                                children: [
+                                                    " ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "skill-progress-fill",
+                                                        style: {
+                                                            width: "90%"
+                                                        }
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/frontend/src/pages/Home.jsx",
+                                                        lineNumber: 362,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    " "
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/frontend/src/pages/Home.jsx",
+                                                lineNumber: 360,
+                                                columnNumber: 15
+                                            }, this),
+                                            " "
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/frontend/src/pages/Home.jsx",
+                                        lineNumber: 353,
+                                        columnNumber: 13
+                                    }, this),
+                                    " ",
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "skills-item",
+                                        children: [
+                                            " ",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "title-wrapper",
+                                                children: [
+                                                    " ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                                                        className: "h5",
+                                                        children: " Systems & Embedded "
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/frontend/src/pages/Home.jsx",
+                                                        lineNumber: 372,
                                                         columnNumber: 17
                                                     }, this),
                                                     " ",
@@ -1023,14 +1062,14 @@ function Home() {
                                                         children: "50%"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 356,
-                                                        columnNumber: 51
+                                                        lineNumber: 373,
+                                                        columnNumber: 17
                                                     }, this),
                                                     " "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                lineNumber: 354,
+                                                lineNumber: 370,
                                                 columnNumber: 15
                                             }, this),
                                             " ",
@@ -1045,35 +1084,35 @@ function Home() {
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                        lineNumber: 360,
+                                                        lineNumber: 377,
                                                         columnNumber: 17
                                                     }, this),
                                                     " "
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                                lineNumber: 358,
+                                                lineNumber: 375,
                                                 columnNumber: 15
                                             }, this),
                                             " "
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                                        lineNumber: 352,
+                                        lineNumber: 368,
                                         columnNumber: 13
                                     }, this),
                                     " "
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/src/pages/Home.jsx",
-                                lineNumber: 308,
+                                lineNumber: 309,
                                 columnNumber: 11
                             }, this),
                             " "
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/src/pages/Home.jsx",
-                        lineNumber: 305,
+                        lineNumber: 306,
                         columnNumber: 9
                     }, this)
                 ]

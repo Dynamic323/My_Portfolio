@@ -210,15 +210,16 @@ function Home() {
             Hello ! <span className="glow_hi">👋 ,</span>
           </p>
           <p>
-            I’m Israel Otamere (<strong>DyCoder</strong>) a full-stack web
-            developer focused on building
-            <strong> premium UI only</strong> and scalable, production ready web
-            applications. I specialize in JavaScript, React,
-            Next.js, TypeScript, Php, Laravel and Node.js, crafting high-performance
-            products for startups, businesses, and founders in Nigeria and
-            internationally. As a co-founder of CocoBase (Backend-as-a-Service),
-            I work at the intersection of clean systems, performance, and
-            real-world impact. I’m available for freelance and contract work.
+            I’m Israel Otamere (DyCoder), a Software Engineer and Full-Stack
+            Developer focused on building premium UI only and scalable,
+            production-ready systems. I specialize in JavaScript, TypeScript,
+            React, Next.js, Node.js, PHP, Laravel, and I’m exploring embedded
+            systems and robotics, expanding my expertise beyond the web. As
+            co-founder of CocoBase (BaaS), I design and implement
+            high-performance software solutions for startups, businesses, and
+            founders in Nigeria and internationally. I’m available for
+            freelance, contract, and startup collaborations, helping clients
+            deliver premium web solutions and scalable software architectures.
           </p>
         </section>
 
@@ -249,8 +250,8 @@ function Home() {
                   {(activeSkill === "frontend"
                     ? frontendSkills
                     : activeSkill === "Backend"
-                    ? backendSkills
-                    : devTools
+                      ? backendSkills
+                      : devTools
                   )
                     .slice(0, 4)
                     .map((tech) => (
@@ -258,7 +259,7 @@ function Home() {
                         key={tech.Name}
                         className={`skill-card ${tech.Name.toLowerCase().replace(
                           /\s+/g,
-                          "-"
+                          "-",
                         )}`}
                         style={{
                           "--mouse-x": `${mousePosition.x}px`,
@@ -275,8 +276,8 @@ function Home() {
                   {(activeSkill === "frontend"
                     ? frontendSkills
                     : activeSkill === "Backend"
-                    ? backendSkills
-                    : devTools
+                      ? backendSkills
+                      : devTools
                   )
                     .slice(4)
                     .map((tech) => (
@@ -284,7 +285,7 @@ function Home() {
                         key={tech.Name}
                         className={`skill-card ${tech.Name.toLowerCase().replace(
                           /\s+/g,
-                          "-"
+                          "-",
                         )}`}
                         style={{
                           "--mouse-x": `${mousePosition.x}px`,
@@ -306,13 +307,11 @@ function Home() {
           {" "}
           <h3 className="h3 service-title">Skills Overview</h3>{" "}
           <ul className="skills-list content-card">
-            {" "}
             <li className="skills-item">
-              {" "}
               <div className="title-wrapper">
-                {" "}
-                <h5 className="h5">Front End</h5> <data value="80">90%</data>{" "}
-              </div>{" "}
+                <h5 className="h5">Front End</h5>{" "}
+                <data value="90">90%</data>
+              </div>
               <div className="skill-progress-bg">
                 {" "}
                 <div
@@ -325,7 +324,8 @@ function Home() {
               {" "}
               <div className="title-wrapper">
                 {" "}
-                <h5 className="h5">Back end</h5> <data value="75">75%</data>{" "}
+                <h5 className="h5">Back end</h5>{" "}
+                <data value="75">75%</data>{" "}
               </div>{" "}
               <div className="skill-progress-bg">
                 {" "}
@@ -339,13 +339,14 @@ function Home() {
               {" "}
               <div className="title-wrapper">
                 {" "}
-                <h5 className="h5">Mobile App</h5> <data value="60">65%</data>{" "}
+                <h5 className="h5">Mobile App</h5>{" "}
+                <data value="80">80%</data>{" "}
               </div>{" "}
               <div className="skill-progress-bg">
                 {" "}
                 <div
                   className="skill-progress-fill"
-                  style={{ width: "65%" }}
+                  style={{ width: "80%" }}
                 ></div>{" "}
               </div>{" "}
             </li>{" "}
@@ -353,7 +354,23 @@ function Home() {
               {" "}
               <div className="title-wrapper">
                 {" "}
-                <h5 className="h5">WordPress</h5> <data value="50">50%</data>{" "}
+                <h5 className="h5"> BaaS / Databases </h5>{" "}
+                <data value="50">90%</data>{" "}
+              </div>{" "}
+              <div className="skill-progress-bg">
+                {" "}
+                <div
+                  className="skill-progress-fill"
+                  style={{ width: "90%" }}
+                ></div>{" "}
+              </div>{" "}
+            </li>{" "}
+            <li className="skills-item">
+              {" "}
+              <div className="title-wrapper">
+                {" "}
+                <h5 className="h5"> Systems & Embedded </h5>{" "}
+                <data value="50">50%</data>{" "}
               </div>{" "}
               <div className="skill-progress-bg">
                 {" "}

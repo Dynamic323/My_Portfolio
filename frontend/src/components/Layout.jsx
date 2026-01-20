@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { images } from "../assets";
+import Image from "next/image";
 
 function Layout({ children }) {
   const sidebarRef = useRef(null);
@@ -33,7 +34,15 @@ function Layout({ children }) {
       <div className="sidebar" data-sidebar ref={sidebarRef}>
         <div className="sidebar-info">
           <figure className="avatar-box">
-            <img src={images.dp} alt="Richard Hanrick" width="80" />
+            {/* <img src={images.dp} alt="Richard Hanrick" width="80" /> */}
+            <Image
+              src="/israel-otamere-profile.jpg"
+              alt="Israel Otamere (DyCoder) - Full-Stack Software Engineer coding React application"
+              width={1200}
+              height={800}
+              priority
+              quality={90}
+            />
           </figure>
 
           <div className="info-content">
@@ -73,7 +82,10 @@ function Layout({ children }) {
             </div>
             <div className="contact-info">
               <p className="contact-title">Email</p>
-              <a href="mailto:otamereisrael8@gmail.com" className="contact-link">
+              <a
+                href="mailto:otamereisrael8@gmail.com"
+                className="contact-link"
+              >
                 otamereisrael8@gmail.com
               </a>
             </div>
