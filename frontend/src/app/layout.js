@@ -17,7 +17,9 @@ export const metadata = {
   description:
     "Israel Otamere (DyCoder), Software Engineer and Full-Stack Developer building premium, scalable web applications. Available for freelance and contract work in Nigeria.",
 
-    
+  icons: {
+    icon: "/images/dp-removebg-preview.png",
+  },
   keywords: [
     "Who is Israel Otamere ",
     "Who is Israel Otamere | Dycoder",
