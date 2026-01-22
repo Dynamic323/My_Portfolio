@@ -17,6 +17,7 @@ export const metadata = {
   description:
     "Israel Otamere (DyCoder), Software Engineer and Full-Stack Developer building premium, scalable web applications. Available for freelance and contract work in Nigeria.",
 
+    
   keywords: [
     "Who is Israel Otamere ",
     "Who is Israel Otamere | Dycoder",
@@ -93,7 +94,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="shortcut icon"
-          href="/avarta_profile.png"
+          href="/images/dp-removebg-preview.png"
           type="image/x-icon"
         />
         <link
