@@ -34,15 +34,17 @@ function Layout({ children }) {
       <div className="sidebar" data-sidebar ref={sidebarRef}>
         <div className="sidebar-info">
           <figure className="avatar-box">
-            {/* <img src={images.dp} alt="Richard Hanrick" width="80" /> */}
-            <Image
-              src="/images/israel-otamere-profile.jpg"
+            <img src={images.dp} 
               alt="Israel Otamere (DyCoder) - Full-Stack Software Engineer coding React application"
+            
+            width="80" />
+            {/* <Image
+              src="/images/israel-otamere-profile.jpg"
               width={1200}
               height={800}
               priority
               quality={90}
-            />
+            /> */}
           </figure>
 
           <div className="info-content">
